@@ -1,0 +1,59 @@
+.app-col-start-1 {
+  position: relative;
+  left: 0;
+}
+
+.app-col-start-2 {
+  position: relative;
+  left: calc((var(--grid-col-width) * 1) + (var(--grid-col-gutter) * 1));
+}
+
+.app-col-start-3 {
+  position: relative;
+  left: calc((var(--grid-col-width) * 2) + (var(--grid-col-gutter) * 2));
+}
+
+.app-col-start-4 {
+  position: relative;
+  left: calc((var(--grid-col-width) * 3) + (var(--grid-col-gutter) * 3));
+}
+
+.app-col-start-5 {
+  position: relative;
+  left: calc((var(--grid-col-width) * 4) + (var(--grid-col-gutter) * 4));
+}
+
+.app-col-start-6 {
+  position: relative;
+  left: calc((var(--grid-col-width) * 5) + (var(--grid-col-gutter) * 5));
+}
+
+.app-col-start-7 {
+  position: relative;
+  left: calc((var(--grid-col-width) * 6) + (var(--grid-col-gutter) * 6));
+}
+
+.app-col-start-8 {
+  position: relative;
+  left: calc((var(--grid-col-width) * 7) + (var(--grid-col-gutter) * 7));
+}
+
+.app-col-start-9 {
+  position: relative;
+  left: calc((var(--grid-col-width) * 8) + (var(--grid-col-gutter) * 8));
+}
+
+.app-col-start-10 {
+  position: relative;
+  left: calc((var(--grid-col-width) * 9) + (var(--grid-col-gutter) * 9));
+}
+
+.app-col-start-11 {
+  position: relative;
+  left: calc((var(--grid-col-width) * 10) + (var(--grid-col-gutter) * 10));
+}
+
+.app-col-start-12 {
+  position: relative;
+  left: calc((var(--grid-col-width) * 11) + (var(--grid-col-gutter) * 11));
+}

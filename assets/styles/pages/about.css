@@ -1,0 +1,32 @@
+.ab-cont-body-l {
+  width: calc((var(--grid-col-width) * 2) + (var(--grid-col-gutter) * 2));
+}
+
+.ab-cont-body-l-nav {
+  gap: calc(var(--spacing-unit) * 4);
+}
+
+.ab-cont-body-l-nav-button {
+  border: none;
+  width: 150px;
+
+  font-size: 30px;
+  font-family: var(--font-family-sans-serif-main);
+  text-align: left;
+  outline: 0;
+}
+
+.ab-cont-body-r {
+  width: 580px;
+}
+
+.ab-cont-body-r-text {
+  padding: calc(var(--spacing-unit) * 3);
+  background-color: var(--color-secondary);
+}
+
+.ab-cont-body-r-text-par {
+  color: white;
+  font-size: 20px;
+  line-height: 2.5;
+}

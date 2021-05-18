@@ -1,0 +1,25 @@
+:root {
+  --grid-col-numb: 12;
+  --grid-col-gutter: 24px;
+  --grid-col-width: calc((100vw - (24px * 11)) / 12);
+
+  /* ===== SPACING ===== */
+
+  --spacing-unit: 8px;
+
+  /* ===== FAMILY ===== */
+
+  --font-family-sans-serif-main: arial, sans-serif;
+  --font-family-sans-serif-secondary: "Source Code Pro", monospace;
+
+  /* ===== COLORS ===== */
+
+  --color-primary: #f4efe1;
+  --color-secondary: #7984a8;
+
+  --color-text: #333;
+  --color-text-grey: #333;
+
+  --color-error: #d94545;
+  --color-valid: #22b17b;
+}

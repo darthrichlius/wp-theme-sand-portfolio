@@ -1,0 +1,36 @@
+.pg-ser-card {
+  display: flex;
+  gap: calc((var(--grid-col-gutter)));
+
+  margin-bottom: calc(var(--spacing-unit) * 8);
+}
+
+.pg-ser-card-hdr {
+  width: calc((var(--grid-col-width) * 2) + (var(--grid-col-gutter) * 1));
+}
+
+.pg-ser-card-hdr-title {
+  font-family: var(--font-family-sans-serif-main);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.pg-ser-card-hdr-subtitle {
+  margin-top: calc(var(--spacing-unit) * 2);
+
+  color: #7c7c7c;
+  font-family: var(--font-family-sans-serif-main);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.pg-ser-card-body {
+  width: calc((var(--grid-col-width) * 4) + (var(--grid-col-gutter) * 3));
+}
+
+.pg-ser-card-text {
+  font-size: 20px;
+  line-height: 1.5;
+}

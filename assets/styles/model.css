@@ -1,0 +1,205 @@
+@import url("./base.css");
+
+.app {
+  /* gap: calc(var(--spacing-unit) * 4); */
+}
+
+.surface {
+  width: 89%;
+}
+
+.main {
+  position: relative;
+
+  width: 84%;
+}
+
+/* ========== ========== ========== ========== ========== */
+/* ========= ========= --- TOP --- ========= ========= */
+
+.blade-t {
+  display: flex;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  z-index: 9;
+
+  /* border-top: 1px solid #aaadb3; */
+  width: 89%;
+  height: 70px;
+  background-color: #fff;
+}
+
+.blade-t::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1px solid #aaadb3;
+  width: 98%;
+}
+
+.blade-t-matrix-box {
+  display: block;
+  border-right: 1px solid #aaadb3;
+  width: 70px;
+  height: 70px;
+  padding: calc(var(--spacing-unit) * 1.5);
+  background-color: var(--color-primary);
+  box-sizing: border-box;
+}
+
+.blade-t-matrix-box-binar {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.blade-t-menunav {
+  margin-right: calc(var(--spacing-unit) * 8);
+  width: 400px;
+}
+
+.blade-t-menunav-list {
+  width: 100%;
+}
+
+/* ========== ========== ========== ========== ========== ========== */
+/* ========= ========= --- ASIDE (LEFT) --- ========= ========= */
+
+.blade-l {
+  justify-content: space-between;
+
+  position: fixed;
+  left: 0;
+  top: 70px;
+
+  border-right: 1px solid #aaadb3;
+  width: 70px;
+  height: calc(100vh - 70px);
+  padding-bottom: calc(var(--spacing-unit) * 2);
+  background-color: #e5e5e5;
+}
+
+.blade-l-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--spacing-unit) * 2);
+}
+
+.blade-l-bottom-sep {
+  width: 50px;
+  height: 5px;
+  background-color: black;
+}
+
+.blade-l-bottom-major {
+  display: flex;
+
+  position: relative;
+
+  margin-top: calc(var(--spacing-unit) * 4);
+  width: 40px;
+  height: 185px;
+  background-color: #e5e5e5;
+
+  white-space: nowrap;
+}
+
+.blade-l-bottom-major-rot {
+  position: absolute;
+  bottom: 0;
+  transform: rotate(-90deg);
+  transform-origin: 22px 48%;
+}
+
+.blade-l-bottom-flname {
+  margin: 0;
+  font-family: var(--font-family-sans-serif-secondary);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.blade-l-bottom-flname-lbl {
+  margin-bottom: calc(var(--spacing-unit) / 2);
+  font-size: 10px;
+  line-height: 1;
+}
+
+.blade-l-bottom-socnet {
+  position: relative;
+
+  padding-top: calc(var(--spacing-unit) * 2);
+
+  white-space: nowrap;
+}
+
+/* ========== ========== ========== ========== ========== */
+/* ========= ========= --- FOOTER --- ========= ========= */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 70px;
+
+  width: calc(80% - 70px);
+  height: 100px;
+  padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 4)
+    calc(var(--spacing-unit) * 6) calc(var(--spacing-unit) * 4);
+  background-color: white;
+}
+
+.footer-main {
+}
+
+.footer-l {
+}
+
+.footer-l p {
+  font-size: 12px;
+  text-align: left;
+}
+
+.footer-r {
+}
+
+.ftr-sw-lang-btn {
+  border-bottom: 1px solid transparent;
+  padding: calc(var(--spacing-unit) / 2);
+  font-size: 12px;
+}
+
+.ftr-sw-lang-btn.active {
+  border-color: black;
+
+  font-size: 12px;
+}
+
+/* ========= ========= ========= ========= ========= ========= */
+/* ========= ========= --- ASIDE (RIGHT) --- ========= ========= */
+
+.aside-r {
+  position: fixed;
+  top: 0;
+  right: -230px;
+  z-index: 0;
+
+  width: 520px;
+  height: 100vh;
+
+  clip-path: polygon(35% 0, 100% 0, 65% 100%, 0 100%);
+
+  background: black;
+}
+
+.aside-r-img {
+  position: absolute;
+  left: -252px;
+  top: -10px;
+
+  height: 1300px;
+  max-width: unset;
+
+  filter: grayscale(100%);
+}
