@@ -1,28 +1,35 @@
 <?php
 
-namespace Theme;
+namespace Rd\Wp\Theme\SandPortfolio;
 
-define('__CONFIG_DIR',  get_template_directory() . '/config');
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
+}
+
+define('RD_THEME_SAND_PORTFOLIO_PREFIX',  'rd_wpthm_sandp_');
+define('RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY', 'rd_wpthm_sandp');
+define('RD_THEME_SAND_PORTFOLIO_CONFIG_DIR',  get_template_directory() . '/config');
 
 function theme_setup()
 {
-    global $post;
-
     add_theme_support('title-tag');
     add_theme_support('menus');
     // load_theme_textdomain('business-rdieud-com', get_template_directory() . '/languages');
 
+    /*
     ob_start();
-    include __CONFIG_DIR . "/config.json";
+    include RD_THEME_SAND_PORTFOLIO_PREFIX . "/config.json";
     $app_config_file_content = ob_get_clean();
 
+    /*
     ob_start();
     include __CONFIG_DIR . "/state.json";
     $app_state_file_content = ob_get_clean();
+    //*/
 
-
-    $GLOBALS['app_config'] = json_decode($app_config_file_content);
-    $GLOBALS['app_state'] = json_decode($app_state_file_content);
+    // $GLOBALS['rd_wthm_sandp_config'] = json_decode($app_config_file_content);
+    // $GLOBALS['app_state'] = json_decode($app_state_file_content);
+    //*/
 }
 
 function theme_register_assets()
@@ -55,6 +62,32 @@ function theme_register_assets()
     }
 }
 
+function init_config()
+{
+    $configFile = RD_THEME_SAND_PORTFOLIO_CONFIG_DIR . '/config.json';
+    if (file_exists($configFile)) {
+        $config = json_decode(file_get_contents($configFile));
+        $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY] = (object) [
+            "config" => $config
+        ];
+    }
+}
+
+function get_config()
+{
+    return $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY]->config;
+}
+
+function get_state()
+{
+    return $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY]->state;
+}
+
+function theme_init()
+{
+    init_config();
+}
+
 function wp_loaded()
 {
     if (!empty($_POST)) {
@@ -66,12 +99,12 @@ function wp_loaded()
 
 function handle_post_request()
 {
-    global $app_config;
+    $rd_wthm_sandp_config = get_config();
 
     // Handle Lang Switch
     if ($_POST['lang'] && $_POST['_wpnonce'] && $_POST['_wp_http_referer']) {
         $security = wp_verify_nonce($_POST['_wpnonce'], 'change-lang-key-trafalgar')
-            && in_array($_POST['lang'], $app_config->i18n->awaited_langs);
+            && in_array($_POST['lang'], $rd_wthm_sandp_config->i18n->awaited_langs);
 
         if ($security) {
             handle_lang_switch($_POST['lang']);
@@ -81,9 +114,9 @@ function handle_post_request()
 
 function init_set_lang()
 {
-    global $app_config;
+    $rd_wthm_sandp_config = get_config();
 
-    $default_lang = $app_config->i18n->default;
+    $default_lang = $rd_wthm_sandp_config->i18n->default;
     $cookie_lang = !empty($_COOKIE['business-rdieud-com-cookie_lang']) ? $_COOKIE['business-rdieud-com-cookie_lang'] : '';
 
     $lang = !$cookie_lang ? $default_lang : $cookie_lang;
@@ -120,10 +153,11 @@ function handle_lang_switch($lang)
     }
 }
 
-add_action('wp_enqueue_scripts', 'Theme\theme_register_assets');
-add_action('after_setup_theme', 'Theme\theme_setup');
+add_action('init', 'Rd\Wp\Theme\SandPortfolio\theme_init');
+add_action('wp_enqueue_scripts', 'Rd\Wp\Theme\SandPortfolio\theme_register_assets');
+add_action('after_setup_theme', 'Rd\Wp\Theme\SandPortfolio\theme_setup');
 
-add_action('wp_loaded', 'Theme\wp_loaded');
+add_action('wp_loaded', 'Rd\Wp\Theme\SandPortfolio\wp_loaded');
 
 // Menu functions and filters.
 require get_template_directory() . '/inc/view.lib.php';

@@ -13,6 +13,9 @@ function app_view_get_page_content($page_slug = "")
     return $content;
 }
 
+/**
+ * @deprecated
+ */
 function app_view_get_page_info($page_slug = "")
 {
     /*
@@ -28,4 +31,9 @@ function app_view_get_page_info($page_slug = "")
     $page_state = json_decode($file_content);
 
     return $page_state->$slug;
+}
+
+function app_view_get_page_main_menu_nav()
+{
+    global $rd_wpplg_dport_state;
 }

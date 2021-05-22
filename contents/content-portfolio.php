@@ -1,3 +1,10 @@
+<?php
+
+if (isset($_GET) && $_GET['sec']) {
+}
+
+?>
+
 <div>
     <section class="pg-port-sec">
         <header class="pg-port-sec-hdr">
@@ -69,6 +76,9 @@
                 <div class="pg-port-pcard-body" style="display: none">
 
                 </div>
+            </section>
+            <section>
+                <?= do_shortcode('[rd_wp_plg_dev_portfolio_project_sc id="esteban-js"]') ?>
             </section>
         </div>
     </section>

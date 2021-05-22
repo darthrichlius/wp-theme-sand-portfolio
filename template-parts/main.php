@@ -3,19 +3,27 @@
         <?= app_view_get_page_content() ?>
     </main>
 <?php else :
-    $page_info = app_view_get_page_info();
+    global $post;
+    $theme_config = Rd\Wp\Theme\SandPortfolio\get_config();
+    $theme_state = Rd\Wp\Theme\SandPortfolio\get_state();
+
+    $page_slug = $post->post_name;
+
+    $page_title = $theme_config->page->$page_slug->title;
+    $page_main_menus = $theme_state->current_page->menus;
+
 ?>
     <main class="main">
         <div class="page-main">
             <div class="">
                 <div class="app-col-start-2 main-header">
                     <div class="main-header-title pattern-diagonal-stripes-sm" style="color: #e2e4e6">
-                        <h2 class="main-header-title-h"><?= __($page_info->title) ?></h2>
+                        <h2 class="main-header-title-h"><?= __($page_title) ?></h2>
                     </div>
-                    <?php if (!empty($page_info) && !empty($page_info->nav) && is_array($page_info->nav)) : ?>
+                    <?php if (!empty($page_main_menus) && is_array($page_main_menus)) : ?>
                         <nav class="main-header-menu-nav">
-                            <?php foreach ($page_info->nav as $menu) : ?>
-                                <button class="main-header-menu-btn"><?= __($menu->label) ?></button>
+                            <?php foreach ($page_main_menus as $menu_key => $menu_label) : ?>
+                                <button data-menu-key="<?= $menu_key ?>" class="main-header-menu-btn"><?= __($menu_label) ?></button>
                             <?php endforeach; ?>
                         </nav>
                     <?php endif; ?>

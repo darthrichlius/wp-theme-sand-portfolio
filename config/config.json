@@ -1,4 +1,18 @@
 {
+    "page": {
+        "about": {
+            "title": "About"
+        },
+        "services": {
+            "title": "Services"
+        },
+        "portfolio": {
+            "title": "Portfolio"
+        },
+        "contact": {
+            "title": "Contact"
+        }
+    },
     "i18n": {
         "default": "en_US",
         "awaited_langs": [
