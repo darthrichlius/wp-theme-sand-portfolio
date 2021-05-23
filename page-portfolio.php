@@ -16,7 +16,7 @@ function setState()
     $rd_wpplg_dport_config = PortfolioPlugin::getConfig();
     $rd_wthm_sandp_config = Rd\Wp\Theme\SandPortfolio\get_config();
 
-    $plugin_dport_post_type = $rd_wpplg_dport_config->constants->cpt->project;
+    $plugin_dport_post_type = RD_WPPLG_DEV_PORT_CPT_PROJECT;
 
     // Get custom post type Project
     $wp_posts = get_posts([
@@ -30,11 +30,13 @@ function setState()
         $wp_post = (array) $wp_post;
 
         $post_metas = get_post_meta($wp_post['ID']);
-        $post_metas = MetaUtils::filter_real_metas($post_metas, 'rd_wp_plg_dev_portfolio_metabox_', 'project_');
 
-        $group_key = isset($post_metas['project_type']) ? $post_metas['project_type'] : $rd_wpplg_dport_config->default->project_type;
+        $prefix = RD_WPPLG_DEV_PORT_CPT_PROJECT . '_';
+        $post_metas = Rd\Wp\Theme\SandPortfolio\filter_real_metas($post_metas, $prefix, false);
 
-        $posts[$group_key][] = array_merge($wp_post, $post_metas);
+        $group_key = isset($post_metas[RD_WPPLG_DEV_PORT_CPT_PROJECT . '_type']) ? $post_metas[RD_WPPLG_DEV_PORT_CPT_PROJECT . '_type'] : $rd_wpplg_dport_config->default->project_type;
+
+        $posts[$group_key][] = (object) array_merge($wp_post, $post_metas);
     }
 
     // Building page main menu data

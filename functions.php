@@ -6,58 +6,56 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
+define('RD_THEME_SAND_PORTFOLIO_ROOTDIR',  get_template_directory());
 define('RD_THEME_SAND_PORTFOLIO_PREFIX',  'rd_wpthm_sandp_');
 define('RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY', 'rd_wpthm_sandp');
-define('RD_THEME_SAND_PORTFOLIO_CONFIG_DIR',  get_template_directory() . '/config');
+define('RD_THEME_SAND_PORTFOLIO_CONFIG_DIR',  RD_THEME_SAND_PORTFOLIO_ROOTDIR . '/config');
+
+define('RD_THEME_SAND_PORTFOLIO_PAGE_ABOUT',  'about');
+define('RD_THEME_SAND_PORTFOLIO_PAGE_SERVICES',  'services');
+define('RD_THEME_SAND_PORTFOLIO_PAGE_PORTFOLIO',  'portfolio');
+define('RD_THEME_SAND_PORTFOLIO_PAGE_CONTACT',  'conact');
+
+require_once RD_THEME_SAND_PORTFOLIO_ROOTDIR . '/inc/theme-plugin-bridge.php';
 
 function theme_setup()
 {
     add_theme_support('title-tag');
     add_theme_support('menus');
     // load_theme_textdomain('business-rdieud-com', get_template_directory() . '/languages');
-
-    /*
-    ob_start();
-    include RD_THEME_SAND_PORTFOLIO_PREFIX . "/config.json";
-    $app_config_file_content = ob_get_clean();
-
-    /*
-    ob_start();
-    include __CONFIG_DIR . "/state.json";
-    $app_state_file_content = ob_get_clean();
-    //*/
-
-    // $GLOBALS['rd_wthm_sandp_config'] = json_decode($app_config_file_content);
-    // $GLOBALS['app_state'] = json_decode($app_state_file_content);
-    //*/
 }
 
 function theme_register_assets()
 {
-
     // IMPORTANT :  Wordpress est fourni de base avec JQuery. Il faut le désactiver pour n'activer que le notre
     wp_deregister_script('jquery');
     wp_register_script('jquery', 'https://code.jquery.com/jquery-3.5.1.slim.min.js', [], false, true);
 
-    wp_enqueue_style('business-rdieud-com-styles-lib-model', get_template_directory_uri() . '/assets/styles/lib/tailwind.css', [], wp_get_theme()->get('Version'));
+    wp_enqueue_style('rd-sand-portfolio-styles-lib-model', get_template_directory_uri() . '/assets/styles/lib/tailwind.css', [], wp_get_theme()->get('Version'));
 
 
     if (is_front_page()) {
-        wp_enqueue_style('business-rdieud-com-styles-model', get_template_directory_uri() . '/assets/styles/model.css', [], wp_get_theme()->get('Version'));
-        wp_enqueue_style('business-rdieud-com-styles-page-home', get_template_directory_uri() . '/assets/styles/pages/home.css', [], wp_get_theme()->get('Version'));
+        wp_enqueue_style('rd-sand-portfolio-styles-model', get_template_directory_uri() . '/assets/styles/model.css', [], wp_get_theme()->get('Version'));
+        wp_enqueue_style('rd-sand-portfolio-styles-page-home', get_template_directory_uri() . '/assets/styles/pages/home.css', [], wp_get_theme()->get('Version'));
     } else {
         // Common Scripts
         wp_enqueue_script('jquery', '', [], wp_get_theme()->get('Version'), true);
         wp_enqueue_script('business-rdieud-com-scripts-front-main', get_template_directory_uri() . '/assets/scripts/f/main.js', [], wp_get_theme()->get('Version'), true);
         // Common Styles
-        wp_enqueue_style('business-rdieud-com-styles-model', get_template_directory_uri() . '/assets/styles/model_wc.css', [], wp_get_theme()->get('Version'));
+        wp_enqueue_style('rd-sand-portfolio-styles-model', get_template_directory_uri() . '/assets/styles/model_wc.css', [], wp_get_theme()->get('Version'));
 
-        // @todo Add a "routes.ext" or DEFINE pages so it goes global
-        $pages = ["about", "services", "portfolio", "contact"];
-        foreach ($pages as $page) {
-            if (is_page($page)) {
-                wp_enqueue_style("business-rdieud-com-styles-page-$page", get_template_directory_uri() . "/assets/styles/pages/$page.css", [], wp_get_theme()->get('Version'));
-            }
+
+        $page_slug = get_post()->post_name;
+        switch ($page_slug) {
+            case RD_THEME_SAND_PORTFOLIO_PAGE_ABOUT:
+            case RD_THEME_SAND_PORTFOLIO_PAGE_SERVICES:
+            case RD_THEME_SAND_PORTFOLIO_PAGE_PORTFOLIO:
+                wp_enqueue_style("rd-sand-portfolio-styles-page-$page_slug", get_template_directory_uri() . "/assets/styles/pages/$page_slug.css", [], wp_get_theme()->get('Version'));
+                wp_enqueue_style("rd-sand-portfolio-styles-rd-dport", get_template_directory_uri() . "/assets/styles/ext/rd-dport.css", [], wp_get_theme()->get('Version'));
+                break;
+            case RD_THEME_SAND_PORTFOLIO_PAGE_CONTACT:
+                wp_enqueue_style("rd-sand-portfolio-styles-page-$page_slug", get_template_directory_uri() . "/assets/styles/pages/$page_slug.css", [], wp_get_theme()->get('Version'));
+                break;
         }
     }
 }
@@ -80,7 +78,10 @@ function get_config()
 
 function get_state()
 {
-    return $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY]->state;
+    return isset($GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY])
+        && isset($GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY]->state)
+        ? $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY]->state
+        : null;
 }
 
 function theme_init()
@@ -95,6 +96,37 @@ function wp_loaded()
     } else {
         init_set_lang();
     }
+}
+
+function array_group_by($haystack, $name)
+{
+    $byName = [];
+    foreach ($haystack as $element) {
+        if (!empty($element)) {
+            if (is_array($element)) {
+                $grp_key = $element[$name];
+                $byName[$grp_key][] = $element;
+            } else if (is_object($element)) {
+                $grp_key = $element->$name;
+                $byName[$grp_key][] = $element;
+            }
+        }
+    }
+
+    return $byName;
+}
+
+function filter_real_metas($wp_post_meta, $prefix, $substr = true)
+{
+    $post_meta_data = [];
+    foreach ($wp_post_meta as $post_meta_key => $post_meta_val) {
+        if (strpos($post_meta_key, $prefix) !== false) {
+            $post_meta_key = $substr ? substr($post_meta_key, mb_strlen($prefix)) : $post_meta_key;
+            $post_meta_data[$post_meta_key] = $post_meta_val && is_array($post_meta_val) ? current($post_meta_val) : "";
+        }
+    }
+
+    return $post_meta_data;
 }
 
 function handle_post_request()

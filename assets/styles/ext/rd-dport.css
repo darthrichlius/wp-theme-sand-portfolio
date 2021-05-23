@@ -1,0 +1,11 @@
+@import url("./base.css");
+
+.rd_wpplg_dport_class_pcard {
+}
+
+.rd_wpplg_dport_class_pcard_field[item-field="title"] {
+  font-size: 90px;
+  font-family: var(--font-family-sans-serif-main);
+  font-weight: 600;
+  line-height: 1;
+}

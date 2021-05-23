@@ -10,7 +10,7 @@
     $page_slug = $post->post_name;
 
     $page_title = $theme_config->page->$page_slug->title;
-    $page_main_menus = $theme_state->current_page->menus;
+    $page_main_menus = $theme_state ? $theme_state->current_page->menus : [];
 
 ?>
     <main class="main">

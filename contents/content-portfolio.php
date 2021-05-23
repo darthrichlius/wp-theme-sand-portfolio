@@ -1,85 +1,41 @@
 <?php
 
-if (isset($_GET) && $_GET['sec']) {
+namespace Rd\Wp\Theme\SandPortfolio;
+
+$state = get_state();
+
+if (isset($state) && isset($state->current_page)) {
+    $posts = $state->current_page->posts;
+    $menus = $state->current_page->menus;
 }
 
 ?>
 
 <div>
-    <section class="pg-port-sec">
-        <header class="pg-port-sec-hdr">
-            <h3 class="pg-port-sec-hdr-title">Pro</h3>
-            <h4 class="pg-port-sec-hdr-subtitle">Made for and with professional clients</h4>
-        </header>
-        <div class="pg-port-sec-body">
-            <section class="pg-port-pcard">
-                <header class="pg-port-pcard-hdr">
-                    <h2 class="pg-port-pcard-title">Catimini</h2>
-                </header>
-                <div class="pg-port-pcard-body" style="display: none">
+    <?php foreach ($menus as $k_menu => $v_menu) : ?>
+        <?php
+        $menu_posts = $posts[$k_menu];
+        $grouped = array_group_by($menu_posts, RD_WPPLG_DEV_PORT_CPT_PROJECT . '_context');
 
-                </div>
-
-            </section>
-            <section class="pg-port-pcard">
-                <header class="pg-port-pcard-hdr">
-                    <h2 class="pg-port-pcard-title">Kidiliz</h2>
+        ?>
+        <?php foreach ($grouped as $k_grouped => $v_grouped) : ?>
+            <section class="pg-port-sec">
+                <header class="pg-port-sec-hdr">
+                    <h3 class="pg-port-sec-hdr-title"><?= $k_grouped ?></h3>
+                    <h4 class="pg-port-sec-hdr-subtitle">Lorem ipsum</h4>
                 </header>
-                <div class="pg-port-pcard-body">
-                    <div class="pg-port-pcard-body-t">
-                        <p class="pg-port-pcard-time">2014 - 2016</p>
-                        <p class="pg-port-pcard-desc">Kidiliz is an online clothes shop for kids. Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>
-                    </div>
-                    <div class="pg-port-pcard-body-ftr">
-                        <div class="pg-port-pcard-body-ftr-part">
-                            <span class="pg-port-pcard-body-ftr-part-label">Role:</span>
-                            <span class="pg-port-pcard-body-ftr-part-val">Developer</span>
-                        </div>
-                        <div class="pg-port-pcard-body-ftr-part">
-                            <span class="pg-port-pcard-body-ftr-part-label">Stack:</span>
-                            <span class="pg-port-pcard-body-ftr-part-val">PHP - Prestashop - Javascript - Jquery</span>
-                        </div>
-                    </div>
-                    <div class="pg-port-pcard-body-extftr">
-                        <button class="pg-port-pcard-visit-btn">Visit</button>
-                    </div>
+                <div class="pg-port-sec-body">
+                    <?php foreach ($v_grouped as $project) :
+                        $title = $project->post_title;
+                        $excerpt = "Kidiliz is an online clothes shop for kids. Lorem ipsum dolor sit amet, consecteur adipiscing elit.";
+                        $date_started = $project->{RD_WPPLG_DEV_PORT_CPT_PROJECT_FIELD_DATE_STARTED};
+                        $date_ended = $project->{RD_WPPLG_DEV_PORT_CPT_PROJECT_FIELD_DATE_ENDED};
+                        $role = $project->{RD_WPPLG_DEV_PORT_CPT_PROJECT_FIELD_ROLE};
+                    ?>
+                        <?php app_view_render_dport_project_card($title, $excerpt, $date_started, $date_ended, $role) ?>
+                    <?php endforeach; ?>
                 </div>
             </section>
-            <section class="pg-port-pcard">
-                <header class="pg-port-pcard-hdr">
-                    <h2 class="pg-port-pcard-title">Z-Eshop</h2>
-                </header>
-                <div class="pg-port-pcard-body" style="display: none">
-
-                </div>
-            </section>
-        </div>
-    </section>
-    <section class="pg-port-sec">
-        <header class="pg-port-sec-hdr">
-            <h3 class="pg-port-sec-hdr-title">Perso</h3>
-            <h4 class="pg-port-sec-hdr-subtitle">Realisation made as side projects</h4>
-        </header>
-        <div class="pg-port-sec-body">
-            <section class="pg-port-pcard">
-                <header class="pg-port-pcard-hdr">
-                    <h2 class="pg-port-pcard-title">Mon Portfolio</h2>
-                </header>
-                <div class="pg-port-pcard-body" style="display: none">
-
-                </div>
-            </section>
-            <section class="pg-port-pcard">
-                <header class="pg-port-pcard-hdr">
-                    <h2 class="pg-port-pcard-title">La Tanière Du Dev</h2>
-                </header>
-                <div class="pg-port-pcard-body" style="display: none">
-
-                </div>
-            </section>
-            <section>
-                <?= do_shortcode('[rd_wp_plg_dev_portfolio_project_sc id="esteban-js"]') ?>
-            </section>
-        </div>
-    </section>
+        <?php endforeach; ?>
+    <?php endforeach; ?>
 </div>
