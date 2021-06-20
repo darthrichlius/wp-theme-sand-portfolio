@@ -10,7 +10,12 @@
         </div>
     </div>
 
-    <div class="blade-l-bottom-socnet hidden">
-        SOC
+    <div class="blade-l-bottom-socnet">
+        <a href="https://linkedin.com">
+            <span class="iconify" data-icon="akar-icons:linkedin-fill" data-inline="false"></span>
+        </a>
+        <a href="https://twitter.com">
+            <span class="iconify" data-icon="akar-icons:twitter-fill" data-inline="false"></span>
+        </a>
     </div>
 </aside>

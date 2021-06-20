@@ -1,0 +1,8 @@
+{
+    "PROJECT_CONTEXT_PRO": "pro",
+    "PROJECT_CONTEXT_PERSO": "perso",
+    "PROJECT_TYPE_LIBRARY": "Library",
+    "PROJECT_TYPE_ONLINEE_SHOP": "Online Shop",
+    "PROJECT_TYPE_WORDPRESS_PLUGIN": "Wordpress Plugin",
+    "PROJECT_TYPE_BLOG": "Blog"
+}

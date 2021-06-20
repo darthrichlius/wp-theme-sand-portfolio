@@ -34,7 +34,7 @@
 
   position: relative;
 
-  border-bottom: 1px solid lightgrey;
+  /* border-bottom: 1px solid lightgrey; */
   margin-left: 230px;
   padding-bottom: calc(var(--spacing-unit) * 1);
 }

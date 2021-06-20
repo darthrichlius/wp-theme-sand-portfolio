@@ -2,6 +2,8 @@
 
 namespace Rd\Wp\Theme\SandPortfolio;
 
+use stdClass;
+
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
@@ -29,30 +31,31 @@ function theme_register_assets()
 {
     // IMPORTANT :  Wordpress est fourni de base avec JQuery. Il faut le désactiver pour n'activer que le notre
     wp_deregister_script('jquery');
-    wp_register_script('jquery', 'https://code.jquery.com/jquery-3.5.1.slim.min.js', [], false, true);
+    wp_register_script('jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', [], false, true);
 
     wp_enqueue_style('rd-sand-portfolio-styles-lib-model', get_template_directory_uri() . '/assets/styles/lib/tailwind.css', [], wp_get_theme()->get('Version'));
 
 
     if (is_front_page()) {
-        wp_enqueue_style('rd-sand-portfolio-styles-model', get_template_directory_uri() . '/assets/styles/model.css', [], wp_get_theme()->get('Version'));
+        wp_enqueue_style('rd-sand-portfolio-styles-model', get_template_directory_uri() . '/assets/styles/models/model.css', [], wp_get_theme()->get('Version'));
         wp_enqueue_style('rd-sand-portfolio-styles-page-home', get_template_directory_uri() . '/assets/styles/pages/home.css', [], wp_get_theme()->get('Version'));
     } else {
         // Common Scripts
         wp_enqueue_script('jquery', '', [], wp_get_theme()->get('Version'), true);
         wp_enqueue_script('business-rdieud-com-scripts-front-main', get_template_directory_uri() . '/assets/scripts/f/main.js', [], wp_get_theme()->get('Version'), true);
         // Common Styles
-        wp_enqueue_style('rd-sand-portfolio-styles-model', get_template_directory_uri() . '/assets/styles/model_wc.css', [], wp_get_theme()->get('Version'));
-
+        wp_enqueue_style('rd-sand-portfolio-styles-model', get_template_directory_uri() . '/assets/styles/models/model_wc.css', [], wp_get_theme()->get('Version'));
 
         $page_slug = get_post()->post_name;
         switch ($page_slug) {
-            case RD_THEME_SAND_PORTFOLIO_PAGE_ABOUT:
-            case RD_THEME_SAND_PORTFOLIO_PAGE_SERVICES:
             case RD_THEME_SAND_PORTFOLIO_PAGE_PORTFOLIO:
                 wp_enqueue_style("rd-sand-portfolio-styles-page-$page_slug", get_template_directory_uri() . "/assets/styles/pages/$page_slug.css", [], wp_get_theme()->get('Version'));
                 wp_enqueue_style("rd-sand-portfolio-styles-rd-dport", get_template_directory_uri() . "/assets/styles/ext/rd-dport.css", [], wp_get_theme()->get('Version'));
+
+                wp_enqueue_script("business-rdieud-com-scripts-page-$page_slug", get_template_directory_uri() . "/assets/scripts/f/$page_slug.js", [], wp_get_theme()->get('Version'), true);
                 break;
+            case RD_THEME_SAND_PORTFOLIO_PAGE_ABOUT:
+            case RD_THEME_SAND_PORTFOLIO_PAGE_SERVICES:
             case RD_THEME_SAND_PORTFOLIO_PAGE_CONTACT:
                 wp_enqueue_style("rd-sand-portfolio-styles-page-$page_slug", get_template_directory_uri() . "/assets/styles/pages/$page_slug.css", [], wp_get_theme()->get('Version'));
                 break;
@@ -62,18 +65,34 @@ function theme_register_assets()
 
 function init_config()
 {
+    $lang_code = get_locale();
+
     $configFile = RD_THEME_SAND_PORTFOLIO_CONFIG_DIR . '/config.json';
+    $dataLangsFile = RD_THEME_SAND_PORTFOLIO_CONFIG_DIR . "/data-langs/$lang_code.json";
+
+    $config = new stdClass();
     if (file_exists($configFile)) {
         $config = json_decode(file_get_contents($configFile));
-        $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY] = (object) [
-            "config" => $config
-        ];
     }
+    $dataLangs = new stdClass();
+    if (file_exists($dataLangsFile)) {
+        $dataLangs = json_decode(file_get_contents($dataLangsFile));
+    }
+
+    $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY] = (object) [
+        "config" => $config,
+        "data_langs" => $dataLangs
+    ];
 }
 
 function get_config()
 {
     return $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY]->config;
+}
+
+function get_data_langs()
+{
+    return $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY]->data_langs;
 }
 
 function get_state()
@@ -114,6 +133,12 @@ function array_group_by($haystack, $name)
     }
 
     return $byName;
+}
+
+function rewriteFlush()
+{
+    // Helps not manually refresh "Permalinks" structure by going to "Flushing"
+    flush_rewrite_rules();
 }
 
 function filter_real_metas($wp_post_meta, $prefix, $substr = true)

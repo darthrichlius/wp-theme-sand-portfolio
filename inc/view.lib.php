@@ -33,18 +33,45 @@ function app_view_get_page_info($page_slug = "")
     return $page_state->$slug;
 }
 
-function app_view_render_dport_project_card($title, $excerpt, $date_started, $date_ended, $role)
-{
+function app_view_render_dport_project_card(
+    $title,
+    $excerpt,
+    $date_started,
+    $date_ended,
+    $role,
+    $client,
+    $context,
+    $type,
+    $link_web,
+    $link_repo,
+    $content,
+    $post_thumbnail
+) {
+    $data = json_encode([
+        "title" => $title,
+        "excerpt" => $excerpt,
+        "date_started" => $date_started,
+        "date_ended" => $date_ended,
+        "role" => $role,
+        "client" => $client,
+        "context" => $context,
+        "type" => $type,
+        "link_web" => $link_web,
+        "link_repo" => $link_repo,
+        "content" => $content,
+        "post_thumbnail" => $post_thumbnail
+    ]);
 ?>
-    <section class="pg-port-pcard">
+    <section class="jab_pg-port-pcard pg-port-pcard" data-compo='<?= $data ?>''>
         <header class="pg-port-pcard-hdr">
-            <h2 class="pg-port-pcard-title"><?= $title ?></h2>
+            <h2 class="jab_pg-port-pcard-title pg-port-pcard-title"><?= $title ?></h2>
         </header>
         <div class="pg-port-pcard-body">
             <div class="pg-port-pcard-body-t">
-                <p class="pg-port-pcard-time"><?= $date_started ?> - <?= $date_ended ?></p>
+                <!-- <p class="pg-port-pcard-time"><?= $date_started ?> - <?= $date_ended ?></p> -->
                 <p class="pg-port-pcard-desc"><?= $excerpt ?></p>
             </div>
+            <!-- 
             <div class="pg-port-pcard-body-ftr">
                 <div class="pg-port-pcard-body-ftr-part">
                     <span class="pg-port-pcard-body-ftr-part-label">Role:</span>
@@ -58,6 +85,7 @@ function app_view_render_dport_project_card($title, $excerpt, $date_started, $da
             <div class="pg-port-pcard-body-extftr">
                 <button class="pg-port-pcard-visit-btn">Visit</button>
             </div>
+            -->
         </div>
     </section>
 <?php

@@ -1,13 +1,16 @@
 <div class="page-main">
     <div class="home-dev-hero app-col-start-3">
-        <h2 class="home-dev-hero-type">Freelance Fulstack</h2>
-        <h3 class="home-dev-hero-title">Web Developer</h3>
+        <h1>
+            <span class="home-dev-hero-type">Fullstack</span>
+            <br />
+            <strong class="home-dev-hero-title">Product Developer</strong>
+        </h1>
     </div>
     <div class="home-dev-agile-specs app-col-start-8">
-        <h3 class="home-dev-agile-specs-pri">Agile Expert</h3>
-        <h4 class="home-dev-agile-specs-sec">Scrum</h4>
-        <h4 class="home-dev-agile-specs-sec">Kanban</h4>
+        <h3 class="home-dev-agile-specs-pri">& Digital Expert</h3>
         <h4 class="home-dev-agile-specs-sec">Agile PM</h4>
+        <h4 class="home-dev-agile-specs-sec">E-Commerce</h4>
+        <h4 class="home-dev-agile-specs-sec">Digital Marketing</h4>
     </div>
     <div class="home-dev-stack-unv app-col-start-5">
         <div class="home-dev-stack-unv-kuiper-color"></div>

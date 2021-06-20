@@ -10,8 +10,6 @@
     $page_slug = $post->post_name;
 
     $page_title = $theme_config->page->$page_slug->title;
-    $page_main_menus = $theme_state ? $theme_state->current_page->menus : [];
-
 ?>
     <main class="main">
         <div class="page-main">
@@ -20,13 +18,6 @@
                     <div class="main-header-title pattern-diagonal-stripes-sm" style="color: #e2e4e6">
                         <h2 class="main-header-title-h"><?= __($page_title) ?></h2>
                     </div>
-                    <?php if (!empty($page_main_menus) && is_array($page_main_menus)) : ?>
-                        <nav class="main-header-menu-nav">
-                            <?php foreach ($page_main_menus as $menu_key => $menu_label) : ?>
-                                <button data-menu-key="<?= $menu_key ?>" class="main-header-menu-btn"><?= __($menu_label) ?></button>
-                            <?php endforeach; ?>
-                        </nav>
-                    <?php endif; ?>
                 </div>
                 <div class="app-col-start-3 main-body">
                     <?= app_view_get_page_content() ?>

@@ -1,3 +1,3 @@
 <?php
 
-require_once "models/standard.model.php";
+require_once "models/default.model.php";

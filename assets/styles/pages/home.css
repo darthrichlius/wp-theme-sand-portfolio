@@ -3,18 +3,21 @@
 }
 
 .home-dev-hero {
-  margin-top: calc(var(--spacing-unit) * 9);
+  margin-top: calc(var(--spacing-unit) * 5);
 }
 
 .home-dev-hero-type {
-  font-size: 24px;
+  font-size: 30px;
+  font-family: var(--font-family-sans-serif-main);
   line-height: 1;
 }
 
 .home-dev-hero-title {
-  margin-top: calc(var(--spacing-unit) * 4);
+  position: relative;
+  top: calc(var(--spacing-unit) * 2);
 
-  font-size: 96px;
+  font-size: 92px;
+  font-family: var(--font-family-sans-serif-main);
   line-height: 1;
 }
 
@@ -137,8 +140,8 @@
 }
 
 .home-dev-agile-specs-sec {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   text-align: right;
-  line-height: 1.6;
+  line-height: 2;
 }
