@@ -1,0 +1,107 @@
+@import "vars";
+
+.app-col-start-1 {
+  @include md-upper {
+    position: relative;
+    padding-left: 0;
+  }
+}
+
+.app-col-start-2 {
+  @include md-upper {
+    position: relative;
+    padding-left: calc(
+      (var(--grid-col-width) * 1) + (var(--grid-col-gutter) * 1)
+    );
+  }
+}
+
+.app-col-start-3 {
+  @include md-upper {
+    position: relative;
+    padding-left: calc(
+      (var(--grid-col-width) * 2) + (var(--grid-col-gutter) * 2)
+    );
+  }
+}
+
+.app-col-start-4 {
+  @include md-upper {
+    position: relative;
+    padding-left: calc(
+      (var(--grid-col-width) * 3) + (var(--grid-col-gutter) * 3)
+    );
+  }
+}
+
+.app-col-start-5 {
+  @include md-upper {
+    position: relative;
+    padding-left: calc(
+      (var(--grid-col-width) * 4) + (var(--grid-col-gutter) * 4)
+    );
+  }
+}
+
+.app-col-start-6 {
+  @include md-upper {
+    position: relative;
+    padding-left: calc(
+      (var(--grid-col-width) * 5) + (var(--grid-col-gutter) * 5)
+    );
+  }
+}
+
+.app-col-start-7 {
+  @include md-upper {
+    position: relative;
+    padding-left: calc(
+      (var(--grid-col-width) * 6) + (var(--grid-col-gutter) * 6)
+    );
+  }
+}
+
+.app-col-start-8 {
+  @include md-upper {
+    position: relative;
+    padding-left: calc(
+      (var(--grid-col-width) * 7) + (var(--grid-col-gutter) * 7)
+    ) !important;
+  }
+}
+
+.app-col-start-9 {
+  @include md-upper {
+    position: relative;
+    padding-left: calc(
+      (var(--grid-col-width) * 8) + (var(--grid-col-gutter) * 8)
+    );
+  }
+}
+
+.app-col-start-10 {
+  @include md-upper {
+    position: relative;
+    padding-left: calc(
+      (var(--grid-col-width) * 9) + (var(--grid-col-gutter) * 9)
+    );
+  }
+}
+
+.app-col-start-11 {
+  @include md-upper {
+    position: relative;
+    padding-left: calc(
+      (var(--grid-col-width) * 10) + (var(--grid-col-gutter) * 10)
+    );
+  }
+}
+
+.app-col-start-12 {
+  @include md-upper {
+    position: relative;
+    padding-left: calc(
+      (var(--grid-col-width) * 11) + (var(--grid-col-gutter) * 11)
+    );
+  }
+}

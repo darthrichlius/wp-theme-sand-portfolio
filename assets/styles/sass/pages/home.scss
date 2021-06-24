@@ -1,0 +1,251 @@
+@import "base";
+
+$kuiper-width-sm: 250px;
+$kuiper-width-md: 294px;
+$kuiper-width-lg: 294px;
+
+.page-main {
+  padding: calc(var(--spacing-unit) * 6) calc(var(--spacing-unit) * 3) 0
+    calc(var(--spacing-unit) * 3);
+
+  @include md-upper {
+    padding: 100px 0 0;
+  }
+}
+
+.home-dev-hero {
+  display: flex;
+  justify-content: center;
+  /* left: 0 !important; */
+
+  @include sm-lower {
+  }
+  @include md-upper {
+    display: block;
+    margin-top: calc(var(--spacing-unit) * 5);
+  }
+}
+
+.home-dev-hero-name,
+.home-dev-hero-type {
+  font-size: 24px;
+  font-family: var(--font-family-sans-serif-main);
+  line-height: 1;
+
+  @include phone-upper {
+    font-size: 30px;
+  }
+}
+
+.home-dev-hero-type {
+  display: none;
+
+  @include md-upper {
+    display: inline-block;
+  }
+}
+
+.home-dev-hero-name {
+  display: inline;
+
+  @include md-upper {
+    display: none;
+  }
+}
+
+.home-dev-hero-title {
+  position: relative;
+  top: calc(var(--spacing-unit) * 2);
+
+  font-size: 52px;
+  font-family: var(--font-family-sans-serif-main);
+  line-height: 1;
+
+  @include phone-upper {
+    font-size: 72px;
+  }
+
+  @include sm-upper {
+    font-size: 92px;
+  }
+
+  @include md-upper {
+    & br {
+      display: none;
+    }
+  }
+}
+
+.home-dev-stack-unv {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  top: calc(var(--spacing-unit) * 12);
+  left: 0;
+
+  @include sm-lower {
+  }
+
+  @include md-upper {
+    display: block;
+  }
+}
+
+.home-dev-stack-unv-kuiper-wrap {
+  position: relative;
+}
+
+.home-dev-stack-unv-kuiper {
+  position: relative;
+  z-index: 3;
+
+  border: 1px dashed black;
+  border-radius: 50%;
+  width: $kuiper-width-sm;
+  height: $kuiper-width-sm;
+
+  @include sm-upper {
+    width: $kuiper-width-md;
+    height: $kuiper-width-md;
+  }
+}
+
+.home-dev-stack-unv-kuiper-color {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  z-index: 1;
+
+  border-radius: 50%;
+  width: $kuiper-width-sm;
+  height: $kuiper-width-sm;
+  background: var(--color-primary);
+
+  @include sm-upper {
+    width: $kuiper-width-md;
+    height: $kuiper-width-md;
+  }
+}
+
+.home-dev-stack-unv-helio {
+  position: relative;
+
+  border: 1px dashed black;
+  border-radius: 50%;
+  width: #{$kuiper-width-sm / 1.5};
+  height: #{$kuiper-width-sm / 1.5};
+
+  z-index: 2;
+
+  @include sm-upper {
+    width: #{$kuiper-width-md / 1.5};
+    height: #{$kuiper-width-md / 1.5};
+  }
+}
+
+.home-dev-stack-unv-sun {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+
+.home-dev-stack-unv-luna {
+  position: absolute;
+
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+}
+
+.home-dev-stack-unv-luna--1 {
+  top: 25px;
+  left: 15px;
+}
+
+.home-dev-stack-unv-luna--2 {
+  top: 15px;
+  right: 25px;
+}
+
+.home-dev-stack-unv-luna--3 {
+  bottom: 15px;
+  right: 25px;
+}
+
+.home-dev-stack-unv-luna--4 {
+  bottom: 25px;
+  left: 15px;
+}
+
+.home-dev-stack-unv-planet {
+  position: absolute;
+
+  font-size: 11px;
+
+  @include sm-upper {
+    font-size: 14px;
+  }
+}
+
+.home-dev-stack-unv-planet--1 {
+  top: 25px;
+  left: 70px;
+
+  transform: rotate(15deg);
+}
+
+.home-dev-stack-unv-planet--2 {
+  top: 80px;
+  left: 10px;
+  transform: rotate(-3deg);
+}
+
+.home-dev-stack-unv-planet--3 {
+  top: 95px;
+  right: 10px;
+  transform: rotate(-20deg);
+}
+
+.home-dev-stack-unv-planet--4 {
+  bottom: 35px;
+  left: 35px;
+  transform: rotate(-6deg);
+}
+
+.home-dev-agile-specs {
+  position: relative;
+  top: calc(var(--spacing-unit) * 6);
+
+  width: 100%;
+
+  @include sm-lower {
+    left: 0 !important;
+  }
+
+  @include md-upper {
+    width: max-content;
+  }
+}
+
+.home-dev-agile-specs-pri {
+  margin-bottom: calc(var(--spacing-unit) * 2);
+  font-family: var(--font-family-sans-serif-main);
+  font-size: 24px;
+  font-weight: 500;
+  text-align: right;
+
+  @include sm-upper {
+    font-size: 30px;
+  }
+}
+
+.home-dev-agile-specs-sec {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: right;
+  line-height: 2;
+}

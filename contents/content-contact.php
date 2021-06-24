@@ -1,33 +1,14 @@
-<div>
-    <form class="c-form" method="POST" action="">
-        <div id="c-form-grp-1" class="c-form-grp">
-            <fieldset class="c-form-field">
-                <label for="c-f-input-1" class="c-form-input-lbl"><?= __("Fullname") ?></label>
-                <input id="c-f-input-1" class="c-form-input" type='text' />
-            </fieldset>
-            <fieldset class="c-form-field">
-                <label for="c-f-input-2" class="c-form-input-lbl"><?= __("Email") ?></label>
-                <input id="c-f-input-2" class="c-form-input" type='text' />
-            </fieldset>
-            <fieldset class="c-form-field">
-                <label for="c-f-input-3" class="c-form-input-lbl"><?= __("Subject") ?></label>
-                <select id="c-f-input-3" class="c-form-input">
-                    <option></option>
-                    <option><?= __("Request a quote for a website") ?></option>
-                    <option><?= __("Availability request") ?></option>
-                </select>
-            </fieldset>
-            <div>
-                <span><?= __("Add Message") ?></span>
-                <button>-></button>
-            </div>
-        </div>
-        <div id="c-form-grp-1" style="display: none">
-            <fieldset>
-                <textarea placeholder='Place Your Message Here'>
-                Place Your Message Here
-            </textarea>
-            </fieldset>
-        </div>
-    </form>
+<div class="pg-ctct-main">
+    <div>
+        <h3 class="pg-ctct-tle">A project, a question?</h3>
+        <p class="pg-ctct-email">digitalwebexpert the-a-thing rdieud.com</p>
+    </div>
+    <div>
+        <p class="pg-ctct-nota"><?= __("Due to a big number of email received, please think about reaching me through my professional social networks <span class='help-note'>(look at the bottom left of the page)</span> to make sure we don't miss each other") ?></p>
+    </div>
+    <div class="pg-ctct-spam-wrng">
+        <h3 class="pg-ctct-spam-wrng-title">Spam Warning</h3>
+        <p class="pg-ctct-spam-wrng-par"><u>This email is only meant for business-related exchanges.</u> <br />Please don't use this email for marketing or any form of spamming activities. </p>
+        <p class="pg-ctct-spam-wrng-par">Transgressors will be blocked, banned and added onto an international spammer blacklist.</p>
+    </div>
 </div>

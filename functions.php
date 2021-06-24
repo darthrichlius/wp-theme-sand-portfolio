@@ -16,7 +16,7 @@ define('RD_THEME_SAND_PORTFOLIO_CONFIG_DIR',  RD_THEME_SAND_PORTFOLIO_ROOTDIR . 
 define('RD_THEME_SAND_PORTFOLIO_PAGE_ABOUT',  'about');
 define('RD_THEME_SAND_PORTFOLIO_PAGE_SERVICES',  'services');
 define('RD_THEME_SAND_PORTFOLIO_PAGE_PORTFOLIO',  'portfolio');
-define('RD_THEME_SAND_PORTFOLIO_PAGE_CONTACT',  'conact');
+define('RD_THEME_SAND_PORTFOLIO_PAGE_CONTACT',  'contact');
 
 require_once RD_THEME_SAND_PORTFOLIO_ROOTDIR . '/inc/theme-plugin-bridge.php';
 
@@ -33,31 +33,32 @@ function theme_register_assets()
     wp_deregister_script('jquery');
     wp_register_script('jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', [], false, true);
 
-    wp_enqueue_style('rd-sand-portfolio-styles-lib-model', get_template_directory_uri() . '/assets/styles/lib/tailwind.css', [], wp_get_theme()->get('Version'));
+    wp_enqueue_style('rd-sand-portfolio-styles-lib-model', get_template_directory_uri() . '/assets/styles/sass/lib/tailwind.css', [], wp_get_theme()->get('Version'));
 
 
     if (is_front_page()) {
-        wp_enqueue_style('rd-sand-portfolio-styles-model', get_template_directory_uri() . '/assets/styles/models/model.css', [], wp_get_theme()->get('Version'));
-        wp_enqueue_style('rd-sand-portfolio-styles-page-home', get_template_directory_uri() . '/assets/styles/pages/home.css', [], wp_get_theme()->get('Version'));
+        wp_enqueue_style('rd-sand-portfolio-styles-model', get_template_directory_uri() . '/assets/styles/css/models/model.css', [], wp_get_theme()->get('Version'));
+        wp_enqueue_style('rd-sand-portfolio-styles-page-home', get_template_directory_uri() . '/assets/styles/css/pages/home.css', [], wp_get_theme()->get('Version'));
+        wp_enqueue_script('business-rdieud-com-scripts-front-main', get_template_directory_uri() . '/assets/scripts/f/main.js', [], wp_get_theme()->get('Version'), true);
     } else {
         // Common Scripts
         wp_enqueue_script('jquery', '', [], wp_get_theme()->get('Version'), true);
         wp_enqueue_script('business-rdieud-com-scripts-front-main', get_template_directory_uri() . '/assets/scripts/f/main.js', [], wp_get_theme()->get('Version'), true);
         // Common Styles
-        wp_enqueue_style('rd-sand-portfolio-styles-model', get_template_directory_uri() . '/assets/styles/models/model_wc.css', [], wp_get_theme()->get('Version'));
+        wp_enqueue_style('rd-sand-portfolio-styles-model', get_template_directory_uri() . '/assets/styles/css/models/model_wc.css', [], wp_get_theme()->get('Version'));
 
         $page_slug = get_post()->post_name;
         switch ($page_slug) {
             case RD_THEME_SAND_PORTFOLIO_PAGE_PORTFOLIO:
-                wp_enqueue_style("rd-sand-portfolio-styles-page-$page_slug", get_template_directory_uri() . "/assets/styles/pages/$page_slug.css", [], wp_get_theme()->get('Version'));
-                wp_enqueue_style("rd-sand-portfolio-styles-rd-dport", get_template_directory_uri() . "/assets/styles/ext/rd-dport.css", [], wp_get_theme()->get('Version'));
+                wp_enqueue_style("rd-sand-portfolio-styles-page-$page_slug", get_template_directory_uri() . "/assets/styles/css/pages/$page_slug.css", [], wp_get_theme()->get('Version'));
+                wp_enqueue_style("rd-sand-portfolio-styles-rd-dport", get_template_directory_uri() . "/assets/styles/css/ext/rd-dport.css", [], wp_get_theme()->get('Version'));
 
                 wp_enqueue_script("business-rdieud-com-scripts-page-$page_slug", get_template_directory_uri() . "/assets/scripts/f/$page_slug.js", [], wp_get_theme()->get('Version'), true);
                 break;
             case RD_THEME_SAND_PORTFOLIO_PAGE_ABOUT:
             case RD_THEME_SAND_PORTFOLIO_PAGE_SERVICES:
             case RD_THEME_SAND_PORTFOLIO_PAGE_CONTACT:
-                wp_enqueue_style("rd-sand-portfolio-styles-page-$page_slug", get_template_directory_uri() . "/assets/styles/pages/$page_slug.css", [], wp_get_theme()->get('Version'));
+                wp_enqueue_style("rd-sand-portfolio-styles-page-$page_slug", get_template_directory_uri() . "/assets/styles/css/pages/$page_slug.css", [], wp_get_theme()->get('Version'));
                 break;
         }
     }
@@ -159,7 +160,7 @@ function handle_post_request()
     $rd_wthm_sandp_config = get_config();
 
     // Handle Lang Switch
-    if ($_POST['lang'] && $_POST['_wpnonce'] && $_POST['_wp_http_referer']) {
+    if (!empty($_POST['lang']) && !empty($_POST['_wpnonce']) && !empty($_POST['_wp_http_referer'])) {
         $security = wp_verify_nonce($_POST['_wpnonce'], 'change-lang-key-trafalgar')
             && in_array($_POST['lang'], $rd_wthm_sandp_config->i18n->awaited_langs);
 

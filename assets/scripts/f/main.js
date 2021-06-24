@@ -23,7 +23,7 @@ function handleLangChange(e) {
         .attr('name', 'lang')
         .attr('value', lg)
     ;
-
+ 
     $('#japp-ftr-sw-fo').append($toto);
     $('#japp-ftr-sw-fo').submit();
 }
@@ -41,6 +41,21 @@ function switchLang(lang) {
     }
 }
 
+function handleMenuSmToggle (e) {
+  e.preventDefault();
+
+  $('.jab_menu-sm-toggler .menu-icon:visible').fadeOut({
+    complete: function() {
+      if (!$('.jab_navbar-collapse').is(':visible')) {
+        $('.jab_menu-sm-toggler .menu-icon-close').fadeIn();
+      } else {
+        $('.jab_menu-sm-toggler .menu-icon-burger').fadeIn();  
+      }
+      $('.jab_navbar-collapse').stop(true, true).toggle();
+    }
+  });
+}
+
 function init() {
     var lang = getCookie("business-rdieud-com-cookie_lang");
     switchLang(lang);
@@ -48,6 +63,8 @@ function init() {
 
 $(document).ready(function() {
    $('.japp-ftr-sw-lang[data-lang]').on('click', handleLangChange);
+
+   $('.jab_menu-sm-toggler').on('click', handleMenuSmToggle);
 
    init();
 });

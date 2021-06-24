@@ -20,9 +20,7 @@
                 </div>
                 <footer class="pg-ser-type-sec-grp-ftr">
                     <div class="pg-ser-type-sec-stack-list">
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='php']"); ?>
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='javascript']"); ?>
-                        <?= do_shortcode('[rd_wp_plg_stack_lib_sc id="alpine-abuild"]'); ?>
+                        <!-- PUT STACK HERE -->
                     </div>
                 </footer>
             </section>
@@ -40,9 +38,7 @@
                 </div>
                 <footer class="pg-ser-type-sec-grp-ftr">
                     <div class="pg-ser-type-sec-stack-list">
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='php']"); ?>
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='javascript']"); ?>
-                        <?= do_shortcode('[rd_wp_plg_stack_lib_sc id="alpine-abuild"]'); ?>
+                        <!-- PUT STACK HERE -->
                     </div>
                 </footer>
             </section>
@@ -61,9 +57,7 @@
                 </div>
                 <footer class="pg-ser-type-sec-grp-ftr">
                     <div class="pg-ser-type-sec-stack-list">
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='php']"); ?>
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='javascript']"); ?>
-                        <?= do_shortcode('[rd_wp_plg_stack_lib_sc id="alpine-abuild"]'); ?>
+                        <!-- PUT STACK HERE -->
                     </div>
                 </footer>
             </section>
@@ -92,7 +86,7 @@
                 </div>
                 <footer class="pg-ser-type-sec-grp-ftr">
                     <div class="pg-ser-type-sec-stack-list">
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='react-native']"); ?>
+                        <!-- PUT STACK HERE -->
                     </div>
                 </footer>
             </section>
@@ -121,9 +115,7 @@
                 </div>
                 <footer class="pg-ser-type-sec-grp-ftr">
                     <div class="pg-ser-type-sec-stack-list">
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='php']"); ?>
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='javascript']"); ?>
-                        <?= do_shortcode('[rd_wp_plg_stack_lib_sc id="alpine-abuild"]'); ?>
+                        <!-- PUT STACK HERE -->
                     </div>
                 </footer>
             </section>
@@ -141,9 +133,7 @@
                 </div>
                 <footer class="pg-ser-type-sec-grp-ftr">
                     <div class="pg-ser-type-sec-stack-list">
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='php']"); ?>
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='javascript']"); ?>
-                        <?= do_shortcode('[rd_wp_plg_stack_lib_sc id="alpine-abuild"]'); ?>
+                        <!-- PUT STACK HERE -->
                     </div>
                 </footer>
             </section>
@@ -161,9 +151,7 @@
                 </div>
                 <footer class="pg-ser-type-sec-grp-ftr">
                     <div class="pg-ser-type-sec-stack-list">
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='php']"); ?>
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='javascript']"); ?>
-                        <?= do_shortcode('[rd_wp_plg_stack_lib_sc id="alpine-abuild"]'); ?>
+                        <!-- PUT STACK HERE -->
                     </div>
                 </footer>
             </section>

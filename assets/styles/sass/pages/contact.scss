@@ -1,0 +1,59 @@
+@import "base";
+
+.pg-ctct-main {
+  display: grid;
+  gap: calc(var(--spacing-unit) * 4);
+}
+
+.pg-ctct-tle {
+  font-family: var(--font-family-sans-serif-main);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.pg-ctct-email {
+  font-weight: bold;
+  margin-top: calc(var(--spacing-unit) * 4);
+}
+
+.pg-ctct-nota,
+.pg-ctct-nota * {
+  font-size: 12px;
+  font-family: var(--font-family-sans-serif-main);
+  line-height: 1.8;
+}
+
+.pg-ctct-nota .help-note {
+  display: none;
+
+  @include md-upper {
+    display: inline-block;
+  }
+}
+
+.pg-ctct-spam-wrng {
+  display: grid;
+  gap: calc(var(--spacing-unit) * 2);
+
+  border-radius: 8px;
+  padding: calc(var(--spacing-unit) * 2);
+  background-color: var(--color-secondary);
+}
+
+.pg-ctct-spam-wrng-title {
+  color: #fff;
+  font-size: 24px;
+  font-family: var(--font-family-sans-serif-main);
+  font-weight: 600;
+}
+
+.pg-ctct-email {
+  line-height: 1.8;
+}
+
+.pg-ctct-spam-wrng-par,
+.pg-ctct-spam-wrng-par * {
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.8;
+}
