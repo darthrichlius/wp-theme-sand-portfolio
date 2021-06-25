@@ -645,8 +645,13 @@ li {
   position: relative;
   display: flex;
   justify-content: center;
-  top: calc(var(--spacing-unit) * 12);
   left: 0;
+}
+@media (max-width: 599px) {
+  /* line 79, ../../sass/pages/home.scss */
+  .home-dev-stack-unv {
+    top: calc(var(--spacing-unit) * 12);
+  }
 }
 @media (min-width: 768px) {
   /* line 79, ../../sass/pages/home.scss */

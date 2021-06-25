@@ -638,7 +638,7 @@ li {
   margin-top: calc(var(--spacing-unit) * 1);
   color: var(--color-secondary);
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 2;
 }
 
 /*
@@ -830,7 +830,7 @@ li {
 .pg-port-single-pg p,
 .pg-port-single-pg ul,
 .pg-port-single-pg-main-sec-par {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 2;
 }
 

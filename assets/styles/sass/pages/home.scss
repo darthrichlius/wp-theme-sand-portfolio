@@ -82,10 +82,10 @@ $kuiper-width-lg: 294px;
   display: flex;
   justify-content: center;
 
-  top: calc(var(--spacing-unit) * 12);
   left: 0;
 
   @include sm-lower {
+    top: calc(var(--spacing-unit) * 12);
   }
 
   @include md-upper {

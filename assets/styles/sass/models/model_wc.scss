@@ -27,6 +27,7 @@
 
   padding-left: calc(var(--spacing-unit) * 3);
 
+  font-family: var(--font-family-sans-serif-main);
   font-size: 50px;
   white-space: nowrap;
   line-height: 1;
@@ -89,6 +90,6 @@
   }
 
   @include xl-upper {
-    width: 768px;
+    /* width: 768px; */
   }
 }

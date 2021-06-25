@@ -566,55 +566,55 @@ li {
 
 /* line 14, ../../sass/pages/contact.scss */
 .pg-ctct-email {
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing-unit) * 1);
   margin-top: calc(var(--spacing-unit) * 4);
+  font-weight: bold;
+  line-height: 1.8;
 }
 
-/* line 19, ../../sass/pages/contact.scss */
+/* line 24, ../../sass/pages/contact.scss */
 .pg-ctct-nota,
 .pg-ctct-nota * {
+  display: none;
   font-size: 12px;
   font-family: var(--font-family-sans-serif-main);
   line-height: 1.8;
 }
 
-/* line 26, ../../sass/pages/contact.scss */
+/* line 32, ../../sass/pages/contact.scss */
 .pg-ctct-nota .help-note {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 26, ../../sass/pages/contact.scss */
+  /* line 32, ../../sass/pages/contact.scss */
   .pg-ctct-nota .help-note {
     display: inline-block;
   }
 }
 
-/* line 34, ../../sass/pages/contact.scss */
+/* line 40, ../../sass/pages/contact.scss */
 .pg-ctct-spam-wrng {
   display: grid;
   gap: calc(var(--spacing-unit) * 2);
   border-radius: 8px;
   padding: calc(var(--spacing-unit) * 2);
-  background-color: var(--color-secondary);
+  background-color: #eff0f2;
 }
 
-/* line 43, ../../sass/pages/contact.scss */
+/* line 49, ../../sass/pages/contact.scss */
 .pg-ctct-spam-wrng-title {
-  color: #fff;
-  font-size: 24px;
+  color: var(--color-text);
+  font-size: 18px;
   font-family: var(--font-family-sans-serif-main);
   font-weight: 600;
 }
 
-/* line 50, ../../sass/pages/contact.scss */
-.pg-ctct-email {
-  line-height: 1.8;
-}
-
-/* line 54, ../../sass/pages/contact.scss */
+/* line 56, ../../sass/pages/contact.scss */
 .pg-ctct-spam-wrng-par,
 .pg-ctct-spam-wrng-par * {
-  color: #fff;
-  font-size: 13px;
-  line-height: 1.8;
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 2;
 }
