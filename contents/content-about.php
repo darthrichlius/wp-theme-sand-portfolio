@@ -60,20 +60,19 @@
                 <section class="ab-cont-grid-card">
                     <h3 class="ab-cont-grid-card-title">— Front Development</h3>
                     <div class="ab-cont-grid-card-body">
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='javascript']"); ?>
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='HTML']"); ?>
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='CSS']"); ?>
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='Bootstrap']"); ?>
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='React']"); ?>
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='nextjs']"); ?>
+                        <span>Javascript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>React</span>
+                        <span>Nextjs</span>
                     </div>
                 </section>
                 <section class="ab-cont-grid-card">
                     <h3 class="ab-cont-grid-card-title">— BackEnd development</h3>
                     <div class="ab-cont-grid-card-body">
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='php']"); ?>
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='symfony']"); ?>
-                        <?= do_shortcode("[rd_wp_plg_stack_lib_sc id='node-js']"); ?>
+                        <span>Javascript</span>
+                        <span>HTML</span>
                     </div>
                 </section>
                 <section class="ab-cont-grid-card">
