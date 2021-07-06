@@ -569,12 +569,14 @@ li {
   display: flex;
   align-items: center;
   gap: calc(var(--spacing-unit) * 1);
+  border-left: 4px solid;
   margin-top: calc(var(--spacing-unit) * 4);
+  padding-left: calc(var(--spacing-unit) * 4);
   font-weight: bold;
   line-height: 1.8;
 }
 
-/* line 24, ../../sass/pages/contact.scss */
+/* line 27, ../../sass/pages/contact.scss */
 .pg-ctct-nota,
 .pg-ctct-nota * {
   display: none;
@@ -583,18 +585,18 @@ li {
   line-height: 1.8;
 }
 
-/* line 32, ../../sass/pages/contact.scss */
+/* line 35, ../../sass/pages/contact.scss */
 .pg-ctct-nota .help-note {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 32, ../../sass/pages/contact.scss */
+  /* line 35, ../../sass/pages/contact.scss */
   .pg-ctct-nota .help-note {
     display: inline-block;
   }
 }
 
-/* line 40, ../../sass/pages/contact.scss */
+/* line 43, ../../sass/pages/contact.scss */
 .pg-ctct-spam-wrng {
   display: grid;
   gap: calc(var(--spacing-unit) * 2);
@@ -603,7 +605,7 @@ li {
   background-color: #eff0f2;
 }
 
-/* line 49, ../../sass/pages/contact.scss */
+/* line 52, ../../sass/pages/contact.scss */
 .pg-ctct-spam-wrng-title {
   color: var(--color-text);
   font-size: 18px;
@@ -611,10 +613,10 @@ li {
   font-weight: 600;
 }
 
-/* line 56, ../../sass/pages/contact.scss */
+/* line 59, ../../sass/pages/contact.scss */
 .pg-ctct-spam-wrng-par,
 .pg-ctct-spam-wrng-par * {
   color: var(--color-text);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 2;
 }

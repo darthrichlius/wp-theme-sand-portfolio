@@ -45,7 +45,7 @@
   margin-bottom: calc(var(--spacing-unit) * 3);
 
   color: var(--color-text);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 2;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .ab-cont-grid-card p b {
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary); */
 }
 
 .ab-cont-grid-card p a {
@@ -104,6 +104,17 @@
 .ab-cont-grid-card-body {
   background: #eff0f2;
   padding: 16px;
+}
+
+.ab-cont-stack-list {
+  display: flex;
+  gap: calc(var(--spacing-unit) * 3);
+  flex-wrap: wrap;
+}
+
+.ab-cont-stack-list img {
+  display: inline-flex;
+  height: 30px;
 }
 
 .about-cont-ss-sect-body-excerpt {

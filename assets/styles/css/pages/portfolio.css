@@ -637,7 +637,7 @@ li {
 .pg-port-pcard-desc {
   margin-top: calc(var(--spacing-unit) * 1);
   color: var(--color-secondary);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 2;
 }
 
@@ -789,7 +789,7 @@ li {
 .pg-port-single-pg-subtitle {
   margin-top: calc((var(--spacing-unit) * 1));
   color: grey;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8;
 }
 
@@ -816,7 +816,7 @@ li {
 /* line 247, ../../sass/pages/portfolio.scss */
 .pg-port-single-pg h6,
 .pg-port-single-pg-main-sec-subtle {
-  font-size: 14px;
+  font-size: 15px;
   font-family: var(--font-family-sans-serif-main);
   font-weight: 600;
 }
@@ -830,7 +830,7 @@ li {
 .pg-port-single-pg p,
 .pg-port-single-pg ul,
 .pg-port-single-pg-main-sec-par {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 2;
 }
 

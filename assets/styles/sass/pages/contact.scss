@@ -16,7 +16,10 @@
   align-items: center;
   gap: calc(var(--spacing-unit) * 1);
 
+  border-left: 4px solid;
   margin-top: calc(var(--spacing-unit) * 4);
+  padding-left: calc(var(--spacing-unit) * 4);
+
   font-weight: bold;
   line-height: 1.8;
 }
@@ -56,6 +59,6 @@
 .pg-ctct-spam-wrng-par,
 .pg-ctct-spam-wrng-par * {
   color: var(--color-text);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 2;
 }
