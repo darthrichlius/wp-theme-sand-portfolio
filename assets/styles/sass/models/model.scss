@@ -154,6 +154,7 @@
 }
 
 .blade-t-menunav-list {
+  gap: calc(var(--spacing-unit) * 3);
   width: 100%;
 }
 

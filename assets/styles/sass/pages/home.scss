@@ -66,10 +66,12 @@ $kuiper-width-lg: 294px;
   }
 
   @include sm-upper {
-    font-size: 92px;
+    // font-size: 92px;
   }
 
   @include md-upper {
+    font-size: 92px;
+
     & br {
       display: none;
     }
@@ -90,6 +92,14 @@ $kuiper-width-lg: 294px;
 
   @include md-upper {
     display: block;
+
+    top: calc(var(--spacing-unit) * 12);
+  }
+
+  @include land-md-upper {
+    display: block;
+
+    top: 0;
   }
 }
 
@@ -184,35 +194,39 @@ $kuiper-width-lg: 294px;
 .home-dev-stack-unv-planet {
   position: absolute;
 
-  font-size: 11px;
+  font-size: 13px;
 
   @include sm-upper {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 .home-dev-stack-unv-planet--1 {
-  top: 25px;
-  left: 70px;
+  top: 35px;
+  left: 100px;
 
   transform: rotate(15deg);
 }
 
 .home-dev-stack-unv-planet--2 {
-  top: 80px;
-  left: 10px;
-  transform: rotate(-3deg);
+  top: 50px;
+  left: 35px;
+  transform: rotate(18deg);
 }
 
 .home-dev-stack-unv-planet--3 {
-  top: 95px;
-  right: 10px;
+  top: 130px;
+  right: 20px;
   transform: rotate(-20deg);
+
+  @include sm-lower {
+    top: 110px;
+  }
 }
 
 .home-dev-stack-unv-planet--4 {
   bottom: 35px;
-  left: 35px;
+  left: 50px;
   transform: rotate(-6deg);
 }
 

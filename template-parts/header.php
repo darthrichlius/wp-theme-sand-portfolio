@@ -21,7 +21,7 @@
             <?= wp_nav_menu(
                 [
                     'container' => '',
-                    'items_wrap' => '<ul class="flex blade-t-menunav-list flex justify-between">%3$s</ul>'
+                    'items_wrap' => '<ul class="flex blade-t-menunav-list flex justify-end">%3$s</ul>'
                 ]
             ) ?>
         </nav>
