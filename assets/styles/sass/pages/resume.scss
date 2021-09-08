@@ -38,7 +38,14 @@
 }
 
 .ab-cont-body-r-text {
-  /* padding: calc(var(--spacing-unit) * 3); */
+  & h3 {
+    color: var(--color-secondary);
+    font-family: var(--font-family-sans-serif-main);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 2;
+  }
 }
 
 .ab-cont-body-r-text-par {
@@ -59,7 +66,7 @@
 .about-cont-ss-sect-title {
   margin-bottom: calc(var(--spacing-unit) * 4);
 
-  font-size: 40px;
+  font-size: 35px;
   font-family: var(--font-family-sans-serif-main);
   font-weight: 600;
 }
@@ -103,22 +110,111 @@
 
 .ab-cont-grid-card-body {
   background: #eff0f2;
-  padding: 16px;
+  padding: calc(var(--spacing-unit) * 4);
 }
 
 .ab-cont-stack-list {
   display: flex;
-  gap: calc(var(--spacing-unit) * 3);
+  gap: calc(var(--spacing-unit) * 5) calc(var(--spacing-unit) * 3);
   flex-wrap: wrap;
 }
 
 .ab-cont-stack-list img {
   display: inline-flex;
   height: 30px;
+  filter: grayscale(50%);
 }
 
 .about-cont-ss-sect-body-excerpt {
   font-size: 18px;
   font-family: var(--font-family-sans-serif-main);
   font-weight: 600;
+}
+
+.ab-cont-xp-card {
+  &-logo {
+    display: inline-block;
+    width: 100%;
+
+    &-w {
+      display: inline-block;
+      width: 56px;
+      background-color: var(--color-primary);
+    }
+  }
+  &-meta,
+  &-meta * {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+  }
+  &-title {
+    font-family: var(--font-family-sans-serif-main);
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &-hdr {
+    grid-template-columns: calc(var(--spacing-unit) * 7) auto;
+    gap: calc(var(--spacing-unit) * 3);
+
+    line-height: 1.6;
+  }
+
+  &-bdy {
+    gap: calc(var(--spacing-unit) * 5);
+
+    margin-top: calc(var(--spacing-unit) * 3);
+    padding-left: calc(var(--spacing-unit) * 10);
+  }
+
+  &-job-par {
+    font-size: 15px;
+    line-height: 1.6;
+
+    &-list {
+      gap: calc(var(--spacing-unit) * 3);
+    }
+  }
+
+  &-list {
+    gap: calc(var(--spacing-unit) * 8);
+  }
+
+  &-roles {
+    gap: calc(var(--spacing-unit) * 3);
+  }
+
+  &-role {
+    position: relative;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: calc(var(--spacing-unit) * 3);
+      left: calc(var(--spacing-unit) * -6.8);
+      display: inline-block;
+      border-radius: 12px;
+      width: 4px;
+      height: calc(100% - 24px);
+      background-color: #e5e5e5;
+    }
+
+    & header {
+      margin-bottom: calc(var(--spacing-unit) * 3);
+    }
+    & .ab-cont-xp-card-title {
+      position: relative;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        top: calc(var(--spacing-unit) / 2);
+        left: calc(var(--spacing-unit) * -7);
+        display: inline-block;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: #e5e5e5;
+      }
+    }
+  }
 }

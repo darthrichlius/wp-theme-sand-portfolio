@@ -197,21 +197,21 @@ $kuiper-width-lg: 294px;
   font-size: 13px;
 
   @include sm-upper {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
 .home-dev-stack-unv-planet--1 {
   top: 35px;
-  left: 100px;
+  left: 90px;
 
   transform: rotate(15deg);
 }
 
 .home-dev-stack-unv-planet--2 {
   top: 50px;
-  left: 35px;
-  transform: rotate(18deg);
+  left: 25px;
+  transform: rotate(-12deg);
 }
 
 .home-dev-stack-unv-planet--3 {
@@ -226,7 +226,7 @@ $kuiper-width-lg: 294px;
 
 .home-dev-stack-unv-planet--4 {
   bottom: 35px;
-  left: 50px;
+  left: 45px;
   transform: rotate(-6deg);
 }
 

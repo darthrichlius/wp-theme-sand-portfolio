@@ -3,6 +3,7 @@
 namespace Rd\Wp\Theme\SandPortfolio;
 
 use stdClass;
+use Symfony\Component\Yaml\Yaml;
 
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
@@ -13,7 +14,7 @@ define('RD_THEME_SAND_PORTFOLIO_PREFIX',  'rd_wpthm_sandp_');
 define('RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY', 'rd_wpthm_sandp');
 define('RD_THEME_SAND_PORTFOLIO_CONFIG_DIR',  RD_THEME_SAND_PORTFOLIO_ROOTDIR . '/config');
 
-define('RD_THEME_SAND_PORTFOLIO_PAGE_ABOUT',  'about');
+define('RD_THEME_SAND_PORTFOLIO_PAGE_RESUME',  'resume');
 define('RD_THEME_SAND_PORTFOLIO_PAGE_SERVICES',  'services');
 define('RD_THEME_SAND_PORTFOLIO_PAGE_PORTFOLIO',  'portfolio');
 define('RD_THEME_SAND_PORTFOLIO_PAGE_CONTACT',  'contact');
@@ -55,7 +56,7 @@ function theme_register_assets()
 
                 wp_enqueue_script("business-rdieud-com-scripts-page-$page_slug", get_template_directory_uri() . "/assets/scripts/f/$page_slug.js", [], wp_get_theme()->get('Version'), true);
                 break;
-            case RD_THEME_SAND_PORTFOLIO_PAGE_ABOUT:
+            case RD_THEME_SAND_PORTFOLIO_PAGE_RESUME:
             case RD_THEME_SAND_PORTFOLIO_PAGE_SERVICES:
             case RD_THEME_SAND_PORTFOLIO_PAGE_CONTACT:
                 wp_enqueue_style("rd-sand-portfolio-styles-page-$page_slug", get_template_directory_uri() . "/assets/styles/css/pages/$page_slug.css", [], wp_get_theme()->get('Version'));
@@ -69,6 +70,7 @@ function init_config()
     $lang_code = get_locale();
 
     $configFile = RD_THEME_SAND_PORTFOLIO_CONFIG_DIR . '/config.json';
+    $expeirenceFile = RD_THEME_SAND_PORTFOLIO_CONFIG_DIR . "/experiences.yml";
     $dataLangsFile = RD_THEME_SAND_PORTFOLIO_CONFIG_DIR . "/data-langs/$lang_code.json";
 
     $config = new stdClass();
@@ -80,9 +82,16 @@ function init_config()
         $dataLangs = json_decode(file_get_contents($dataLangsFile));
     }
 
+    $experiences = new stdClass();
+    if (file_exists($expeirenceFile)) {
+        $experiences = Yaml::parse(file_get_contents($expeirenceFile));
+    }
+
+
     $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY] = (object) [
         "config" => $config,
-        "data_langs" => $dataLangs
+        "data_langs" => $dataLangs,
+        "experiences" => $experiences
     ];
 }
 
@@ -94,6 +103,11 @@ function get_config()
 function get_data_langs()
 {
     return $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY]->data_langs;
+}
+
+function get_experiences()
+{
+    return $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY]->experiences;
 }
 
 function get_state()

@@ -1,7 +1,7 @@
 <div class="page-main">
     <div class="home-dev-hero app-col-start-3">
         <h1>
-            <span class="home-dev-hero-type hidden-mobile">Blogger, Technical</span>
+            <span class="home-dev-hero-type hidden-mobile">Blogger & Technical</span>
             <span class="home-dev-hero-name">Richard Dieud</span>
             <br />
             <strong class="home-dev-hero-title">Product <br />Manager</strong>
@@ -9,7 +9,7 @@
     </div>
     <div class="home-dev-agile-specs app-col-start-8">
         <h3 class="home-dev-agile-specs-pri">Range of expertise</h3>
-        <h4 class="home-dev-agile-specs-sec">E-Commerce</h4>
+        <h4 class="home-dev-agile-specs-sec">Web, E-Commerce</h4>
         <h4 class="home-dev-agile-specs-sec">Scrum, Kanban, <strong>Agile Coach</strong></h4>
         <h4 class="home-dev-agile-specs-sec">Product, Digital Marketing Blogger</h4>
     </div>
@@ -23,10 +23,10 @@
                     <div class="home-dev-stack-unv-luna home-dev-stack-unv-luna--3"></div>
                     <div class="home-dev-stack-unv-luna home-dev-stack-unv-luna--4"></div>
 
-                    <span class="home-dev-stack-unv-planet home-dev-stack-unv-planet--1">Mobile</span>
+                    <span class="home-dev-stack-unv-planet home-dev-stack-unv-planet--1">Marketing</span>
                     <span class="home-dev-stack-unv-planet home-dev-stack-unv-planet--2">Web</span>
-                    <span class="home-dev-stack-unv-planet home-dev-stack-unv-planet--3">Design</span>
-                    <span class="home-dev-stack-unv-planet home-dev-stack-unv-planet--4">UX</span>
+                    <span class="home-dev-stack-unv-planet home-dev-stack-unv-planet--3">Tech</span>
+                    <span class="home-dev-stack-unv-planet home-dev-stack-unv-planet--4">UI/UX</span>
 
                     <div class="home-dev-stack-unv-sun"></div>
                 </div>

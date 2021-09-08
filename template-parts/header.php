@@ -1,6 +1,6 @@
 <header>
     <div class="blade-t">
-        <a class="blade-t-matrix-box flex flex-col justify-between" href="/">
+        <a class="blade-t-matrix-box flex flex-col justify-between" title="Home" href="/">
             <p class="flex justify-between blade-t-matrix-box-binar">
                 <span>1</span>
                 <span>0</span>

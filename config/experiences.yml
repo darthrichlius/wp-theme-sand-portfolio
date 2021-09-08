@@ -1,0 +1,229 @@
+[
+  {
+    "title": "Founder / Blogger (Digital, Product & Marketing)",
+    "company": {
+      "name": "Harsdkills PM",
+      "logo":"/app/themes/sand-portfolio-theme/assets/media/img/company/hardskills-pm.png"
+    },
+    "period": {
+      "date_start": "2021-10",
+      "present": 1,
+    },
+    "place": "Paris, France",
+    "description": [
+      "Hardskills PM is a learning platform for Product Managers, Product Designers and Scrum Master. 
+      The goal is to learn how to build products from the definition to the delivery using the best Agile frameworks and finally make them grow. 
+      The program will tackle all fields of the product development life cycle, including the technical ones.
+      It will help users gaining new skills and assess their knowledge. 
+      At the beginning, the website will be in full English but may expand, depending on the context.",
+      "The website is on work-in-progress status but will be available soon. ",
+      "Our vision is to make it one of the leading online platforms dealing with product development and agile in France through tangible, complete, organized and detailed content."
+    ]
+  },
+  {
+    "title": "Product Manager / Coach Agile / Senior Fullstack Developer (Web, E-Commerce, Marketplace)", 
+    "type": "Permanent",
+    "company": {
+      "name": "Whisibam",
+      "logo":"/app/themes/sand-portfolio-theme/assets/media/img/company/wishibam.jpg"
+    },
+    "period": {
+      "date_start": "2018-12",
+      "date_end": "2020-06",
+    },
+    "place": "Paris, France",
+    "description": [
+      "Wishibam mission has always been to provide alternative solutions to an all-Amazon world thanks to its experience in digitalizing brick-and-mortar retailers. 
+      The company's latest product is an ingenious MarketPlace. 
+      The product is due to enlarge retailers footprint in the e-commerce market, and help to be more competitive by digitalizing their product catalog, making it easier to manage, automating processes, collecting data and simplifying the purchase for the customer."
+    ],
+    "roles": [
+      {
+        "title": "Product Manager / Coach Agile", 
+        "period": {
+          "date_start": "2019-06",
+          "date_end": "2020-06",
+        },
+        
+        "description": [
+          "As time went by, we realized that, given the structural difficulties the team was facing, it was becoming urgent to set up a more efficient work system. It is in this context that I took on the role of Product Manager and Agile Coach to take control of the project management, better coordinate its development, set up an agile structure and finally, help the team increase its skills in agile & scrum.",
+          "<ul style='line-height: 1.5'>
+          <li>- Promote agile principles to all stakeholders<li>
+          <li>- Hold agile training sessions<li>
+          <li>- Help the Product Owner in writing the stories<li>
+          <li>- Set up the roadmap<li>
+          <li>- Facilitate agile ceremonies (Sprint planning, DSM, sprint review, retrospective)<li>
+          <li>- Set up & pririotize the backlog<li>
+          <li>- Report progress & issues to the PO and get feedbacks over how to solve them asap</li>
+          <li>- Monitor the team's velocity with a burndown and raise alters</li>
+          </ul>",
+          "<u>Technologies</u>: JIRA, Slack, Google WorkPlace"
+        ]
+      },
+      {
+        "title": "Senior Fullstack Developer",
+        "period": {
+          "date_start": "2018-12",
+          "date_end": "2019-06"
+        },
+        "description": [
+          "As a developer, I joined the technical team first to help in the development of the marketplace but also to share my experience in e-commerce and running project under agile.",
+          "<ul style='line-height: 1.5'>
+          <li>- Develop and implement new features</li>
+          <li>- Fix bugs</li>
+          <li>- Write good quality code and build test automation (unit and functional)</li>
+          <li>- Supervise code reviews</li>
+          <li>- Consolidate the distributed architecture with better isolation, security & performance</li>
+          <li>- Mentoring less experienced members of the team</li>
+          <li>- Get involved in key technical decisions</li>
+          <li>- Write the API documentation and ensure its reliability</li>
+          </ul>",
+          "<u>Technologies</u>: Symfony 4, Doctrine, Api Platform, ReactJS, Redux, PHP 7, PHPUnit, Javascript, HTML 5, CSS 3, Material UI, SQL, PostgreSQL, Git, Gitlab, JIRA, Slack, AWS S3, AWS EC2"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Senior Fullstack Developer (Web, E-commerce, E-Shop)",
+    "type": "Permanent",
+    "company": {
+      "name": "Antilop",
+      "logo": "/app/themes/sand-portfolio-theme/assets/media/img/company/antilop.jpg"
+    },
+    "period": {
+      "date_start": "2016-11",
+      "date_end": "2018-12"
+    },
+    "place": "Paris, France",
+    "description": [
+      "<i>A huge part of my work comprised working on projects for another company called Kidiliz Group. Check my work there, in the following experience section.</i>",
+      "E-commerce projects I worked for (excluding Kidiliz Group's ones):",
+      "<ul style='line-height: 1.5'>
+      <li>- <b>Ultra Premium Direct</b>: An e-commerce brand focused on animal feed, thanks to subscriptions</li>
+      <li>- <b>Ysé Paris</b>: A French brand of lingerie, swimwear, bodies and pyjamas</li>
+      </ul>"
+    ]
+  },
+  {
+    "title": "Senior Fullstack Developer (Web, E-commerce, E-Shop)",
+    "type": "Permanent",
+    "company": {
+      "name": "Kidiliz Group",
+      "logo": "/app/themes/sand-portfolio-theme/assets/media/img/company/kidiliz-group.jpg"
+    },
+    "period": {
+      "date_start": "2016-11",
+      "date_end": "2018-12"
+    },
+    "place": "Paris, France",
+    "description": [
+      "I worked for a company named Antilop where we were in charged of maintaining and developing several e-shop for Kidiliz Group: <b>Catimini, Kidiliz, Z-Eshop, Tartine Et Chocolat, One Step</b>.",
+      "As a full stack engineer working for a start-up, I had an unbounded range of tasks:",
+      "<ul style='line-height: 1.5'>
+      <p><b>Outer Scope</b></p>
+      <li>- Co-lead the implementation of the company's showcase on 'Welcome To The Jungle'</li>
+      <p><b>Project Scope</b></p>
+      <li>- Help the scrum master ensure the readiness of user stories</li>
+      <li>- Creating user stories if necessary</li>
+      <li>- Participate in sprint planning</li>
+      <li>- Provide advices to improve Scrum & agile principles</li>
+      <p><b>Technical Scope</b></p>
+      <li>- Supervising code deployment</li>
+      <li>- Code review</li> 
+      <li>- Validating constraints requiremens</li>
+      <li>- Write functional testings</li>
+      <li>- Ameliorate website performance</li> 
+      <li>- Integrate new features</li>
+      <li>- Integrate UI</li>
+      <li>- Resolve bugs</li>
+      <li>- Write API documentation</li>
+      <li>- Provide assistance to junior profiles</li>
+      </ul>",
+      "<u>Technologies</u>: Prestashop, Silex (Symfony), Smarty, PHP, Behat, PHPUnit, Doctrine, Javascript, JQuery, AJAX, HTML, CSS, Sass, SQL, MySQL, Elastic Search, Algolia, Redis, Git, Gulp, Vagrant, Puppet, Capistrano, Jenkins, JIRA, Slack"
+    ]
+  },
+  {
+    "title": "Founder, CEO, Product Manager (Web, Social Network)",
+    "type": "Permanent",
+    "company": {
+      "name": "deuslynn Entreprise",
+      "logo": "/app/themes/sand-portfolio-theme/assets/media/img/company/deuslynn.png"
+    },
+    "period": {
+      "date_start": "2012-11",
+      "date_end": "2016-11"
+    },
+    "place": "Lyon, France",
+    "description": [
+      "I was in charge of a team of 3 (2 developers and 1 support).
+      The goal was to build a MVP of an alternative social network, to Facebook in France.
+      At the time, the market was not as saturated and toxic as it is right now.
+      So it was an opportunity to seize at soon as possible.",
+      "<p>The product had to reach diverse functional and technical requirements:</p><br/>
+      <p><b>Functional</b></p><br/>
+      <ul style='line-height: 1.5'>
+      <li>- Focus on sharing around common passions, rather than social distinction</li>
+      <li>- Provide a better User Experience than Facebook (easier access to features, shortcuts, etc...)</li>
+      <li>- Facilitating the exchanges between users thanks to an optimized UI and UX</li>
+      <li>- Enlarge reaction choices (Love, Like, Dislike)</li>
+      <li>- Provide built-in add-ons going beside basis social network features (Bookmark manager, Photo editor, ...) </li>
+      </ul>
+      <br/>
+      <p><b>Technical</b></p><br/>
+      <ul style='line-height: 1.5'>
+      <li>- Build a framework to support the application and ensure the product run at our development pace</li>
+      <li>- Develop an architecture that emphases security and performance</li>
+      </ul>
+      ",
+      "<p>As a manager, I had to make sure the project was going well, regarding  deadlines, execution, delivery, team motivation</p><br/>
+        <ul style='line-height: 1.5'>
+        <li>- Evangelize the product's vision</li>
+        <li>- Hire developers, provide support in case of technical impediments</li>
+        <li>- Set up a pleasant and efficient work environment</li>
+        <li>- Interview with potential users</li>
+        <li>- Analyze user metrics</li>
+        <li>- Monitor the development progress</li>
+        <li>- Manage pages and accounts on social networks</li>
+        <li>- Launch marketing ad campaigns (SMA, SEA)</li>
+        <li>- Produce launch trailer video (<a style='color: #7984a8' href='https://www.youtube.com/watch?v=9O1EVRYTSLY'>Link</a>)</li>
+      </ul>",
+      "The project turned out to be as exciting as depressing. 
+      <b>Facebook's ability to developing fast was such high, it became unsustainable.</b> 
+      To stay competitive, we had to pivot very often and update the roadmap, a move which caused the project to fail because the momentum had gone. 
+      A funny story is that, if you pay attention to the trailer video (<a style='color: #7984a8' href='https://www.youtube.com/watch?v=9O1EVRYTSLY'>WHATCH HERE</a>), you could see <b>we were the first to implement some features and ideas Facebook only adopted much later</b>...
+      Anyway, it was one of the most important entrepreneurship lessons I have ever taken in my life. ",
+      "<u>Technologies</u>: Rode (Proprietary Framework), Symfony (core), Web Sockets, PHP, Javascript, RequireJS, JQuery, AJAX, HTML, CSS, XML, SQL, MySQL, Redis, SVN"
+    ]
+  },
+  {
+    "title": "Junior Project Manager (Industry, Planning & Manufacturing)",
+    "type": "Internship",
+    "company": {
+      "name": "Alstom Transport",
+      "logo": "/app/themes/sand-portfolio-theme/assets/media/img/company/alstom.jpg"
+    },
+    "period": {
+      "date_start": "2011-11",
+      "date_end": "2012-11"
+    },
+    "place": "Lyon, France",
+    "description": [
+      "I was in charge of designing and implementing an internal software. It had for its function of planning tasks and monitoring the production of on-board cards for trains and TGV.",
+      "The project included the following tasks:
+      <ul style='line-height: 1.5'>
+      <li>- Define with the PO the software and project goals</li>
+      <li>- Review the current state of affairs</li>
+      <li>- Write the software specifications</li>
+      <li>- Propose a technical solution that meets the specifications</li>
+      <li>- Conduct interviews with users to understand their procedures and integrate their needs into the future software</li>
+      <li>- Set up the roadmap</li> 
+      <li>- Build the user interfaces and the management system</li>
+      <li>- Set up a database</li> 
+      <li>- Conduct change management</li>
+      <li>- Write the documentation</li>
+      </ul>",
+      "<u>Technologies</u>: C#, .Net, Excel, VBA, Microsoft Access, SQL"
+    ]
+  }
+]
+  
