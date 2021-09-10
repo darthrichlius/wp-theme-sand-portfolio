@@ -61,7 +61,7 @@ function init() {
     switchLang(lang);
 }
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
    $('.japp-ftr-sw-lang[data-lang]').on('click', handleLangChange);
 
    $('.jab_menu-sm-toggler').on('click', handleMenuSmToggle);

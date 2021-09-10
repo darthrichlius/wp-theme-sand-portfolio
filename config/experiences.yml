@@ -17,7 +17,8 @@
       It will help users gaining new skills and assess their knowledge. 
       At the beginning, the website will be in full English but may expand, depending on the context.",
       "The website is on work-in-progress status but will be available soon. ",
-      "Our vision is to make it one of the leading online platforms dealing with product development and agile in France through tangible, complete, organized and detailed content."
+      "Our vision is to make it one of the leading online platforms dealing with product development and agile in France through tangible, complete, organized and detailed content.",
+      "<u>Technologies</u>: Wordpress, PHP, Sass, MySQL / Capistrano, Gitlab, Docker, Grafana, Prometheus"
     ]
   },
   {

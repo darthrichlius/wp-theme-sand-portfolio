@@ -1,7 +1,7 @@
 <div class="page-main">
     <div class="home-dev-hero app-col-start-3">
         <h1>
-            <span class="home-dev-hero-type hidden-mobile">Blogger & Technical</span>
+            <span class="home-dev-hero-type hidden-mobile">Blogger &</span>
             <span class="home-dev-hero-name">Richard Dieud</span>
             <br />
             <strong class="home-dev-hero-title">Product <br />Manager</strong>

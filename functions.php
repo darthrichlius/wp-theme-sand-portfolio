@@ -31,11 +31,12 @@ function theme_setup()
 function theme_register_assets()
 {
     // IMPORTANT :  Wordpress est fourni de base avec JQuery. Il faut le désactiver pour n'activer que le notre
+    // wp_dequeue_script('jquery');
     wp_deregister_script('jquery');
     wp_register_script('jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', [], false, true);
+    wp_enqueue_script('jquery', '', [], wp_get_theme()->get('Version'), true);
 
     wp_enqueue_style('rd-sand-portfolio-styles-lib-model', get_template_directory_uri() . '/assets/styles/sass/lib/tailwind.css', [], wp_get_theme()->get('Version'));
-
 
     if (is_front_page()) {
         wp_enqueue_style('rd-sand-portfolio-styles-model', get_template_directory_uri() . '/assets/styles/css/models/model.css', [], wp_get_theme()->get('Version'));
@@ -43,7 +44,7 @@ function theme_register_assets()
         wp_enqueue_script('business-rdieud-com-scripts-front-main', get_template_directory_uri() . '/assets/scripts/f/main.js', [], wp_get_theme()->get('Version'), true);
     } else {
         // Common Scripts
-        wp_enqueue_script('jquery', '', [], wp_get_theme()->get('Version'), true);
+
         wp_enqueue_script('business-rdieud-com-scripts-front-main', get_template_directory_uri() . '/assets/scripts/f/main.js', [], wp_get_theme()->get('Version'), true);
         // Common Styles
         wp_enqueue_style('rd-sand-portfolio-styles-model', get_template_directory_uri() . '/assets/styles/css/models/model_wc.css', [], wp_get_theme()->get('Version'));
