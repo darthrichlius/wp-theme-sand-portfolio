@@ -6,7 +6,7 @@ $company_name = @$exp['company']['name'] ?: null;
 $company_logo = @$exp['company']['logo'] ?: null;
 
 $date_start = @$exp['period']['date_start'] ?: null;
-$date_end = @$exp['period']['present'] ? 'Present' : @$exp['period']['date_end'] ?: null;
+$date_end = ($exp['period']['present'] ? 'Present' : @$exp['period']['date_end']) ?: null;
 
 $multi_role = !empty($exp['roles']);
 ?>
