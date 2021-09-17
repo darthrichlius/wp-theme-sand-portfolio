@@ -232,5 +232,9 @@ add_action('after_setup_theme', 'Rd\Wp\Theme\SandPortfolio\theme_setup');
 
 add_action('wp_loaded', 'Rd\Wp\Theme\SandPortfolio\wp_loaded');
 
+# Prevent canonical redirection
+# Note: This is very specific as we use a system with proxy and letting this provoke infinte redirection
+remove_filter('template_redirect','redirect_canonical');
+
 // Menu functions and filters.
 require get_template_directory() . '/inc/view.lib.php';
