@@ -43,17 +43,11 @@ $experiences = get_experiences();
                 Companies choose to hire them because they leverage their technical skills to close the communication gap between engineering and the rest or the product team.
                 More over, their technical skills help to improve prioritization and planning.
             </p>
-            <h3>— Languages & Communication</h3>
-            <p class="ab-cont-body-r-text-par">
-                I speak <b>French</b> and <b>English</b>.
-                Although not that easy to maintain my English level while living in France, I try to do my best.
-                I guess holding a full-English blog helps.
-            </p>
-            <p class="ab-cont-body-r-text-par">
-                My communication skills are good, writing and speaking. I am very ease at talking to people, even more if I can learn from them.
-                As concerns taking decisions, I know how to say yes, but also no, while being a diplomat and empathic.
-                Nimble, I can adapt to my interlocutor whatever his age, sex and origin.
-            </p>
+            <h3>— Languages</h3>
+            <ul class="ab-cont-body-r-text-par">
+                <li><b>French</b> (Native language)</li>
+                <li><b>English</b> (Good level)</li>
+            </ul>
         </div>
     </section>
 
