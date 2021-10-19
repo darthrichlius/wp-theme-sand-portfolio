@@ -1,26 +1,26 @@
 [
-  {
-    "title": "Founder / Blogger (Digital, Product & Marketing)",
-    "company": {
-      "name": "Harsdkills PM",
-      "logo":"/app/themes/sand-portfolio-theme/assets/media/img/company/hardskills-pm.png"
-    },
-    "period": {
-      "date_start": "2021-10",
-      "present": 1,
-    },
-    "place": "Paris, France",
-    "description": [
-      "Hardskills PM is a learning platform for Product Managers, Product Designers and Scrum Master. 
-      The goal is to learn how to build products from the definition to the delivery using the best Agile frameworks and finally make them grow. 
-      The program will tackle all fields of the product development life cycle, including the technical ones.
-      It will help users gaining new skills and assess their knowledge. 
-      At the beginning, the website will be in full English but may expand, depending on the context.",
-      "The website is on work-in-progress status but will be available soon. ",
-      "Our vision is to make it one of the leading online platforms dealing with product development and agile in France through tangible, complete, organized and detailed content.",
-      "<u>Technologies</u>: Wordpress, PHP, Sass, MySQL / Capistrano, Gitlab, Docker, Grafana, Prometheus"
-    ]
-  },
+#   {
+#     "title": "Founder / Blogger (Digital, Product & Marketing)",
+#     "company": {
+#       "name": "Harsdkills PM",
+#       "logo":"/app/themes/sand-portfolio-theme/assets/media/img/company/hardskills-pm.png"
+#     },
+#     "period": {
+#       "date_start": "2021-10",
+#       "present": 1,
+#     },
+#     "place": "Paris, France",
+#     "description": [
+#       "Hardskills PM is a learning platform for Product Managers, Product Designers and Scrum Master. 
+#       The goal is to learn how to build products from the definition to the delivery using the best Agile frameworks and finally make them grow. 
+#       The program will tackle all fields of the product development life cycle, including the technical ones.
+#       It will help users gaining new skills and assess their knowledge. 
+#       At the beginning, the website will be in full English but may expand, depending on the context.",
+#       "The website is on work-in-progress status but will be available soon. ",
+#       "Our vision is to make it one of the leading online platforms dealing with product development and agile in France through tangible, complete, organized and detailed content.",
+#       "<u>Technologies</u>: Wordpress, PHP, Sass, MySQL / Capistrano, Gitlab, Docker, Grafana, Prometheus"
+#     ]
+#   },
   {
     "title": "Product Manager / Coach Agile / Senior Fullstack Developer (Web, E-Commerce, Marketplace)", 
     "type": "Permanent",
