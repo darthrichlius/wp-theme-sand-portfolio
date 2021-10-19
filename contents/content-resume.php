@@ -43,14 +43,6 @@ $experiences = get_experiences();
                 Companies choose to hire them because they leverage their technical skills to close the communication gap between engineering and the rest or the product team.
                 More over, their technical skills help to improve prioritization and planning.
             </p>
-            <h3>— What is your agile background?</h3>
-            <p class="ab-cont-body-r-text-par">
-                I adopted agile soon, since my first job as an intern at Alstom Transport.
-                My first steps were stammering. Therefore, I decided to <b>improve my knowledge by starting a blog</b>.
-                Later, the work paid off!
-                My mastery helped me to become a useful ally for teams I worked with, as I <b>helped them improve their routine and to be more productive</b>, thanks to Scrum.
-                This is how I ended up to become a professional agile coach and scrum master.
-            </p>
             <h3>— Languages & Communication</h3>
             <p class="ab-cont-body-r-text-par">
                 I speak <b>French</b> and <b>English</b>.
