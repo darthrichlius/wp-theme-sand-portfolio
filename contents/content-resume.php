@@ -51,11 +51,6 @@ $experiences = get_experiences();
                 My mastery helped me to become a useful ally for teams I worked with, as I <b>helped them improve their routine and to be more productive</b>, thanks to Scrum.
                 This is how I ended up to become a professional agile coach and scrum master.
             </p>
-            <h3>— Are you a Scrum Master or a Product Manager?</h3>
-            <p class="ab-cont-body-r-text-par">
-                SM or PM, it doesn't matter. <b>I am fully qualified and have experiences in both positions</b>.
-                Both bring me the same level of motivation and satisfaction</b>.
-            </p>
             <h3>— Languages & Communication</h3>
             <p class="ab-cont-body-r-text-par">
                 I speak <b>French</b> and <b>English</b>.
