@@ -17,32 +17,49 @@ $experiences = get_experiences();
 </div>
 <div class="ab-cont-body-r">
     <section id="aboutme" class="about-cont-ss-sect">
-        <h2 class="about-cont-ss-sect-title">Hello,</h2>
+        <h2 class="about-cont-ss-sect-title">Summary</h2>
         <div class="about-cont-ss-sect-body ab-cont-body-r-text">
+            <p>Hello 🫲</p>
             <p class="ab-cont-body-r-text-par">
                 <?=
-                __("My name is Richard. I am a <b>product developer</b> and a <b>digital marketing & product development blogger</b>, with over 8 years of professional experience. 
-                    To be a product developer means being able to <b>take the lead</b> of a digital product development team and <b>build some on my own (Demo, Prototype, MVP, ...)</b>. 
-                    In that situation, having strong technical skills is a real plus and a <b>competitive advantage</b> over other product managers and scrum master. 
-                    The kind that makes you a superhero! The one who masters the role and work of each member of the team and helps get things done more effectively.")
+                __("My name is Richard Dieud, I'm a 30 yo product and digital engineering expert with more than 9 years of experience. 
+                    Thanks to a long range of expertise, I can ideate, design, develop and maintain digital products that provide an impact and respond to user needs and problems. ")
                 ?>
             </p>
+            <p style="display: none">(Check My Portfolio)</p>
+        </div>
+        <div class="about-cont-ss-sect-body ab-cont-body-r-text">
+            <h3>— Experiences</h3>
             <p class="ab-cont-body-r-text-par">
                 <?=
-                __("During my career, I <b>worked in several positions</b> that allowed me to becoming more refined in my understanding and mastery regarding product development. 
-                    I held the positions of an entrepreneur, project manager, developer, scrum master, agile coach, and product manager. 
-                    All these experiences <b>always took place in an agile context</b>.")
+                __("My experience in the Product is the result of 5 years of product management either as a founder or as an employee. 
+                    I worked in several types of projects at different positions (developer, coach agile and product manager) mostly in social network and ecommerce markets.")
                 ?>
             </p>
-            <h3>— Why do you describe yourself as product developer?</h3>
+            <p style="display: none">(See my experiences)</p>
+        </div>
+        <div class="about-cont-ss-sect-body ab-cont-body-r-text">
+            <h3>— References</h3>
             <p class="ab-cont-body-r-text-par">
-                Foremost, let's be clear: I am Product Manager as others.
-                There are people who get confused when I say I am a <q>product developer</q>.
-                If that is your case, <b>you should rather call me technical product manager</b>.
-                A technical product manager is a product manager with a technical background.
-                Companies choose to hire them because they leverage their technical skills to close the communication gap between engineering and the rest or the product team.
-                More over, their technical skills help to improve prioritization and planning.
+                <?=
+                __("My references are companies like Catimini, Kidiliz, Tartine-Chocolat and Wishibam. 
+                For that last experience, I supervised the development of a B2B solution that helped sellers survive COVID lockdowns thanks to a unique omnicanal marketplace solution with an impact of 12% increase in sales and 32% in-store traffic or our clients.")
+                ?>
             </p>
+            <p style="display: none">(See Wishibam Use Case)</p>
+        </div>
+        <div class="about-cont-ss-sect-body ab-cont-body-r-text">
+            <h3>— A product manager journey</h3>
+            <p class="ab-cont-body-r-text-par">
+                <?=
+                __("As a product manager, my role is to build solutions that make users happy. 
+                This is a very strategic job that requires great leadership and ability to define the vision behind which the team will relate. 
+                For new features or changes, my responsibility is to work closely with stakeholders to identify user problems, provide solutions, define goals and metrics, and ensure that these solutions meet their needs before I can provide specifications to the technical team to bring the solution to life.")
+                ?>
+            </p>
+            <p style="display: none">(Check How I Treat Cases)</p>
+        </div>
+        <div class="about-cont-ss-sect-body ab-cont-body-r-text">
             <h3>— Languages</h3>
             <ul class="ab-cont-body-r-text-par">
                 <li><b>French</b> (Native language)</li>
