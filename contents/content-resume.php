@@ -8,7 +8,7 @@ $experiences = get_experiences();
 
 <div class="ab-cont-body-l">
     <nav class="flex flex-col ab-cont-body-l-nav">
-        <a class="ab-cont-body-l-nav-button" href="#aboutme"><?= __('About Me') ?></a>
+        <a class="ab-cont-body-l-nav-button" href="#summary"><?= __('Summary') ?></a>
         <a class="ab-cont-body-l-nav-button" href="#experiences"><?= __('Experiences') ?></a>
         <a class="ab-cont-body-l-nav-button" href="#skills"><?= __('Skills') ?></a>
         <a class="ab-cont-body-l-nav-button" href="#tech"><?= __('Technologies') ?></a>
@@ -16,54 +16,131 @@ $experiences = get_experiences();
     </nav>
 </div>
 <div class="ab-cont-body-r">
-    <section id="aboutme" class="about-cont-ss-sect">
+    <section id="summary" class="about-cont-ss-sect about-cont-ss-sect--summary">
         <h2 class="about-cont-ss-sect-title">Summary</h2>
         <div class="about-cont-ss-sect-body ab-cont-body-r-text">
-            <p>Hello 🫲</p>
+            <p><i>Hello 👋, In a hurry? The <q>summary</q> is for you!</i></p>
             <p class="ab-cont-body-r-text-par">
                 <?=
-                __("My name is Richard Dieud, I'm a 30 yo product and digital engineering expert with more than 9 years of experience. 
-                    Thanks to a long range of expertise, I can ideate, design, develop and maintain digital products that provide an impact and respond to user needs and problems. ")
+                __("My name is Richard Dieud, I'm a <b>30 yo</b> agile <b>product manager</b> and former <b>fullstack developer</b> with 9 years of experience including  <b>5 as a product manager</b>.")
                 ?>
             </p>
-            <p style="display: none">(Check My Portfolio)</p>
+            <p style="display: none">[CTA:CHECK_PORTFOLIO]</p>
         </div>
         <div class="about-cont-ss-sect-body ab-cont-body-r-text">
-            <h3>— Experiences</h3>
+            <h3>— Achievements</h3>
             <p class="ab-cont-body-r-text-par">
                 <?=
-                __("My experience in the Product is the result of 5 years of product management either as a founder or as an employee. 
-                    I worked in several types of projects at different positions (developer, coach agile and product manager) mostly in social network and ecommerce markets.")
+                __("<b>Dozens of use cases</b>, mostly in <b>e-commerce</b> and <b>social network</b> realms.
+                Rolled out and maintained <b>B2C online stores</b>, <b>B2C/B2B marketplaces</b>, <b>B2C media-centered social networks</b>.")
                 ?>
             </p>
-            <p style="display: none">(See my experiences)</p>
+            <ul style="line-height: 1.8">
+                <li>✅ <b>+10,000 users</b> benefited from my work</li>
+                <li>✅ <b>+5M€ in revenue</b> for companies</li>
+            </ul>
+            <h4 class="about-cont-achv-card-title"><span style="font-size: 30px;">⬇</span> Latest Achievement (Product Manager) <span style="font-size: 30px;">⬇</span></h4>
+            <div class="about-cont-achv-card">
+                <p class="about-cont-achv-card-block-l"><img title="Wishibam" aly="wishibam logo" src="/app/themes/sand-portfolio-theme/assets/media/img/company/wishibam.jpg" /></p>
+                <div class="about-cont-achv-card-block-r">
+                    <h4 class="about-cont-achv-card-block-title">Omnicanal Marketplace Study Case</h4>
+                    <h5 class="about-cont-achv-card-block-h1">— Problem</h5>
+                    <p class="about-cont-achv-card-block-bdy">
+                        Between 2010 and 2019, sellers in-store traffic dropped by 60% while e-commerce turnover increased by +188%.
+                        As a result, stores are closing (+57% between 2012-2017) while real estate assets valuation is falling.
+                        COVID-19 lockdowns have just worsen the sellers fate.
+                    </p>
+
+                    <h5 class="about-cont-achv-card-block-h1">— Solutions</h5>
+                    <ul class="about-cont-achv-card-block-bdy" style="line-height: 1.8">
+                        <li>🚩 Web-to-store omnicanal Saas solution for shopping malls</li>
+                        <li>🚩 Support sellers in building their websotre in accordance with our API</li>
+                        <li>🚩 Backend interface to monitor stock, sales, orders in real-time</li>
+                        <li>🚩 Product catalog importer system assisted with AI</li>
+                    </ul>
+
+                    <h5 class="about-cont-achv-card-block-h1">— Impacts</h5>
+                    <ul class="about-cont-achv-card-block-bdy" style="line-height: 1.8;">
+                        <li>✅ Dozens sellers survived COVID-19 lockdowns</li>
+                        <li>✅ Deployed in Lyon, Angers, Nice, Versailles</li>
+                        <li>✅ <span class="ab-cont-icon">↗</span>12% sales for sellers</li>
+                        <li>✅ <span class="ab-cont-icon">↗</span>32% in-store traffic</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="about-cont-ss-sect-body ab-cont-body-r-text">
             <h3>— References</h3>
-            <p class="ab-cont-body-r-text-par">
-                <?=
-                __("My references are companies like Catimini, Kidiliz, Tartine-Chocolat and Wishibam. 
-                For that last experience, I supervised the development of a B2B solution that helped sellers survive COVID lockdowns thanks to a unique omnicanal marketplace solution with an impact of 12% increase in sales and 32% in-store traffic or our clients.")
-                ?>
-            </p>
-            <p style="display: none">(See Wishibam Use Case)</p>
+            <ul class="ab-cont-body-r-text-par">
+                <li class="...">👕 Clothing (<b>Catimini</b>, <b>Kidiliz</b>, <b>Tartine-Et-Chocolat</b>)</li>
+                <li class="...">👙 Lingerie (<b>Yse</b>)</li>
+                <li class="...">🐶 Animal Foods (<b>Ultra Premium Direct</b>)</li>
+                <li class="...">🕸 Marketing <b>SaaS B2B solutions</b> startups (<b>Wishibam</b>)</li>
+            </ul>
+            <p style="display: none">[CTA:CHECK MY EXPERIENCES]</p>
         </div>
         <div class="about-cont-ss-sect-body ab-cont-body-r-text">
-            <h3>— A product manager journey</h3>
-            <p class="ab-cont-body-r-text-par">
-                <?=
-                __("As a product manager, my role is to build solutions that make users happy. 
-                This is a very strategic job that requires great leadership and ability to define the vision behind which the team will relate. 
-                For new features or changes, my responsibility is to work closely with stakeholders to identify user problems, provide solutions, define goals and metrics, and ensure that these solutions meet their needs before I can provide specifications to the technical team to bring the solution to life.")
-                ?>
-            </p>
-            <p style="display: none">(Check How I Treat Cases)</p>
+            <h3>— What & How I Do</h3>
+            <ul class="ab-cont-body-r-text-par" style="line-height: 1.8">
+                <li>- <span class="...">🤩</span> <?= __("Build solutions that make <b>users happy</b>") ?></li>
+                <li>- <span class="...">🛣</span> <?= __("Build & update the <b>roadmap</b>") ?></li>
+                <li>- <span class="...">📈</span> <?= __("Nurture <b>traffic growth</b>, <b>conversion rate</b> and <b>engagement</b>") ?></li>
+                <li>- <span class="...">🎤</span> <?= __("Define the product <b>vision</b>") ?></li>
+                <li>- <span class="...">🎯</span> <?= __("Collect & <b>prioritize</b> user problems, <b>ideate</b> solutions, define <b>goals and metrics</b> after a proper user <b>segmentation</b>") ?></li>
+                <li>- <span class="...">🤨</span> <?= __("Decrease the risk with <b>user testings</b>, <b>MVP</b>") ?></li>
+                <li>- <span class="...">🙌</span> <?= __("Write <b>specifications</b> for the tech team, a bit of <b>QA</b>") ?></li>
+                <li>- <span class="...">🔎</span> <?= __("Assess <b>results</b> and <b>iterate</b>") ?></li>
+            </ul>
+            <p style="display: none">[CTA:CHECK MY USES CASES]</p>
         </div>
         <div class="about-cont-ss-sect-body ab-cont-body-r-text">
             <h3>— Languages</h3>
             <ul class="ab-cont-body-r-text-par">
-                <li><b>French</b> (Native language)</li>
-                <li><b>English</b> (Good level)</li>
+                <li><span class="...">🇫🇷</span> <?= __("<b>French</b> (Native language)") ?></li>
+                <li><span class="...">🇺🇸</span> <?= __("<b>English</b> (Good profesional level)") ?></li>
+            </ul>
+            <div style="display: none">
+                <p style="font-size: 12px; margin-bottom: 8px">Want to hear me talking?</p>
+                <p>[CTA:CHECK MY PODCASTS]</p>
+            </div>
+        </div>
+        <div class="about-cont-ss-sect-body ab-cont-body-r-text">
+            <h3>— Strengths</h3>
+            <ul class="ab-cont-strengths">
+                <li><b><?= __("Soft Skills") ?></b>:</li>
+                <li><?= __("Leadership") ?></li>
+                <li>▪</li>
+                <li><?= __("Saying No") ?></li>
+                <li>▪</li>
+                <li><?= __("Agility") ?></li>
+                <li>▪</li>
+                <li><?= __("Learning Fast") ?></li>
+                <li>▪</li>
+                <li><?= __("Entrepreuneurial mindset") ?></li>
+                <li>▪</li>
+                <li><?= __("Doer") ?></li>
+            </ul>
+            <ul class="ab-cont-strengths">
+                <li><b><?= __("Hard Skills") ?></b>:</li>
+                <li><?= __("User Experience") ?></li>
+                <li>▪</li>
+                <li><?= __("Product Management") ?></li>
+                <li>▪</li>
+                <li><?= __("Digital Marketing") ?></li>
+                <li>▪</li>
+                <li><?= __("Scrum & Agile Coaching") ?></li>
+                <li>▪</li>
+                <li><?= __("Technical skills") ?></li>
+                <li>▪</li>
+                <li><?= __("User Interface Design") ?></li>
+            </ul>
+        </div>
+        <div class="about-cont-ss-sect-body ab-cont-body-r-text">
+            <h3>— Education</h3>
+            <ul class="ab-cont-body-r-text-par">
+                <li style="font-weight: bold"><span class="...">🎓</span> <?= __("B.S in Computer Science & Project Management") ?></li>
+                <li style="font-size: 13px">Sciecnes-U, Lyon FR</li>
+                <li style="font-size: 13px">2009 - 2012</li>
             </ul>
         </div>
     </section>
