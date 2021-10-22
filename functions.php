@@ -58,6 +58,10 @@ function theme_register_assets()
                 wp_enqueue_script("business-rdieud-com-scripts-page-$page_slug", get_template_directory_uri() . "/assets/scripts/f/$page_slug.js", [], wp_get_theme()->get('Version'), true);
                 break;
             case RD_THEME_SAND_PORTFOLIO_PAGE_RESUME:
+                wp_enqueue_style("rd-sand-portfolio-styles-page-$page_slug", get_template_directory_uri() . "/assets/styles/css/pages/$page_slug.css", [], wp_get_theme()->get('Version'));
+
+                wp_enqueue_script("business-rdieud-com-scripts-page-$page_slug", get_template_directory_uri() . "/assets/scripts/f/$page_slug.js", [], wp_get_theme()->get('Version'), true);
+                break;
             case RD_THEME_SAND_PORTFOLIO_PAGE_SERVICES:
             case RD_THEME_SAND_PORTFOLIO_PAGE_CONTACT:
                 wp_enqueue_style("rd-sand-portfolio-styles-page-$page_slug", get_template_directory_uri() . "/assets/styles/css/pages/$page_slug.css", [], wp_get_theme()->get('Version'));
@@ -234,7 +238,7 @@ add_action('wp_loaded', 'Rd\Wp\Theme\SandPortfolio\wp_loaded');
 
 # Prevent canonical redirection
 # Note: This is very specific as we use a system with proxy and letting this provoke infinte redirection
-remove_filter('template_redirect','redirect_canonical');
+remove_filter('template_redirect', 'redirect_canonical');
 
 // Menu functions and filters.
 require get_template_directory() . '/inc/view.lib.php';

@@ -145,9 +145,18 @@ $experiences = get_experiences();
         </div>
     </section>
 
-    <section id="experiences" class="about-cont-ss-sect">
-        <h2 class="about-cont-ss-sect-title">Experiences</h2>
-        <div class="about-cont-ss-sect-body">
+    <section id="experiences" class="about-cont-ss-sect jss-about-cont-ss-sect">
+        <div class="about-cont-ss-sect-title-row jss-about-cont-ss-sect-title-row">
+            <h2 class="about-cont-ss-sect-title">Experiences</h2>
+            <button class="about-cont-ss-sect-title-visible-btn jss-about-cont-ss-sect-title-visible-btn" app-type="visible">
+                <img class="about-cont-ss-sect-title-visible-icon" src="https://img.icons8.com/material-outlined/24/000000/visible--v1.png" />
+            </button>
+            <button class="about-cont-ss-sect-title-visible-btn jss-about-cont-ss-sect-title-visible-btn hidden" app-type="closed">
+                <img class="about-cont-ss-sect-title-visible-icon" src="https://img.icons8.com/material-outlined/24/000000/closed-eye.png" />
+            </button>
+        </div>
+
+        <div class="about-cont-ss-sect-body jss-about-cont-ss-sect-body">
             <p class="ab-cont-body-r-text-par about-cont-ss-sect-body-excerpt">
             </p>
             <div class="grid ab-cont-grid-card-list">
@@ -159,9 +168,17 @@ $experiences = get_experiences();
         </div>
     </section>
 
-    <section id="skills" class="about-cont-ss-sect">
-        <h2 class="about-cont-ss-sect-title">Profesional Skills</h2>
-        <div class="about-cont-ss-sect-body">
+    <section id="skills" class="about-cont-ss-sect jss-about-cont-ss-sect">
+        <div class="about-cont-ss-sect-title-row jss-about-cont-ss-sect-title-row">
+            <h2 class="about-cont-ss-sect-title">Profesional Skills</h2>
+            <button class="about-cont-ss-sect-title-visible-btn jss-about-cont-ss-sect-title-visible-btn hidden" app-type="visible">
+                <img class="about-cont-ss-sect-title-visible-icon" src="https://img.icons8.com/material-outlined/24/000000/visible--v1.png" />
+            </button>
+            <button class="about-cont-ss-sect-title-visible-btn jss-about-cont-ss-sect-title-visible-btn" app-type="closed">
+                <img class="about-cont-ss-sect-title-visible-icon" src="https://img.icons8.com/material-outlined/24/000000/closed-eye.png" />
+            </button>
+        </div>
+        <div class="about-cont-ss-sect-body jss-about-cont-ss-sect-body hidden">
             <p class="ab-cont-body-r-text-par about-cont-ss-sect-body-excerpt">
                 <?= __("This is a summary of the type of daily tasks I usually perform during my professional or personal projects") ?>
             </p>
@@ -230,9 +247,17 @@ $experiences = get_experiences();
         </div>
     </section>
 
-    <section id="tech" class="about-cont-ss-sect">
-        <h2 class="about-cont-ss-sect-title">Technologies</h2>
-        <div class="about-cont-ss-sect-body">
+    <section id="tech" class="about-cont-ss-sect jss-about-cont-ss-sect">
+        <div class="about-cont-ss-sect-title-row jss-about-cont-ss-sect-title-row">
+            <h2 class="about-cont-ss-sect-title">Technologies</h2>
+            <button class="about-cont-ss-sect-title-visible-btn jss-about-cont-ss-sect-title-visible-btn hidden" app-type="visible">
+                <img class="about-cont-ss-sect-title-visible-icon" src="https://img.icons8.com/material-outlined/24/000000/visible--v1.png" />
+            </button>
+            <button class="about-cont-ss-sect-title-visible-btn jss-about-cont-ss-sect-title-visible-btn" app-type="closed">
+                <img class="about-cont-ss-sect-title-visible-icon" src="https://img.icons8.com/material-outlined/24/000000/closed-eye.png" />
+            </button>
+        </div>
+        <div class="about-cont-ss-sect-body jss-about-cont-ss-sect-body hidden">
             <p class="ab-cont-body-r-text-par about-cont-ss-sect-body-excerpt">
                 <?= __("As a PM or Scrum Master, technical skills are a tremendous advantage as they help close the communication gap between team members. In addition, they help to improve prioritization and planning in setting up the roadmap.") ?>
             </p>
@@ -354,9 +379,17 @@ $experiences = get_experiences();
         </div>
     </section>
 
-    <section id="wishes" class="about-cont-ss-sect">
-        <h2 class="about-cont-ss-sect-title">Job Preferences</h2>
-        <div class="about-cont-ss-sect-body">
+    <section id="wishes" class="about-cont-ss-sect jss-about-cont-ss-sect">
+        <div class="about-cont-ss-sect-title-row jss-about-cont-ss-sect-title-row">
+            <h2 class="about-cont-ss-sect-title">Job Preferences</h2>
+            <button class="about-cont-ss-sect-title-visible-btn jss-about-cont-ss-sect-title-visible-btn hidden" app-type="visible">
+                <img class="about-cont-ss-sect-title-visible-icon" src="https://img.icons8.com/material-outlined/24/000000/visible--v1.png" />
+            </button>
+            <button class="about-cont-ss-sect-title-visible-btn jss-about-cont-ss-sect-title-visible-btn" app-type="closed">
+                <img class="about-cont-ss-sect-title-visible-icon" src="https://img.icons8.com/material-outlined/24/000000/closed-eye.png" />
+            </button>
+        </div>
+        <div class="about-cont-ss-sect-body jss-about-cont-ss-sect-body hidden">
             <div class="ab-cont-grid-card-list">
                 <section class="ab-cont-grid-card">
                     <h3 class="ab-cont-grid-card-title">— Role</h3>
