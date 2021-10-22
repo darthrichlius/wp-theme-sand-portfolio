@@ -357,69 +357,40 @@ $experiences = get_experiences();
     <section id="wishes" class="about-cont-ss-sect">
         <h2 class="about-cont-ss-sect-title">Job Preferences</h2>
         <div class="about-cont-ss-sect-body">
-            <p class="ab-cont-body-r-text-par about-cont-ss-sect-body-excerpt">
-                <?= __("In view of the large number of requests, make sure you take notice of my work and / or mission wishes. It will save you and me time") ?>
-            </p>
             <div class="ab-cont-grid-card-list">
-
                 <section class="ab-cont-grid-card">
                     <h3 class="ab-cont-grid-card-title">— Role</h3>
                     <div class="ab-cont-grid-card-body">
-                        <p class="ab-cont-body-r-text-par">
-                            <?= __("I am currently listening to opportunities as <b>Scrum Master</b> / <b>Coach Agile</b> or <b>Product Manager</b>") ?>
-                        </p>
-                    </div>
-                </section>
-                <section class="ab-cont-grid-card">
-                    <h3 class="ab-cont-grid-card-title">— Project & Domain</h3>
-                    <div class="ab-cont-grid-card-body">
-                        <p class="ab-cont-body-r-text-par">
-                            <?= __("As regards my experiences, I will be naturally more at my ease for opportunities in the fields of <b>web, mobile & e-commerce</b>.") ?>
-                        </p>
-                        <p class="ab-cont-body-r-text-par">
-                            <?= __("However, as I have huge capabilities for adaptation and love to learn new things perpetually, I will be delighted to learn more about your company and project. ") ?>
-                        </p>
+                        <ul class="ab-cont-body-r-text-par">
+                            <li>- <b>Product Manager</b></li>
+                            <li>- <b>Delivery Manager</b></li>
+                            <li>- <b>Coach Agile</b></li>
+                        </ul>
                     </div>
                 </section>
                 <section class="ab-cont-grid-card">
                     <h3 class="ab-cont-grid-card-title">— Location</h3>
                     <div class="ab-cont-grid-card-body">
-                        <p class="ab-cont-body-r-text-par">
-                            <?= __("My preference will go to offers related to <b>Paris (intramural)</b> or to a lesser extent its close region. More specifically, I am referring to the areas northwest or southeast of Paris.") ?>
-                        </p>
-                        <p class="ab-cont-body-r-text-par">
-                            <?= __("As concerns abroad mission trips, <b>I am not afraid to travel abroad</b> for short to medium missions.") ?>
-                        </p>
-                    </div>
-                </section>
-                <section class="ab-cont-grid-card">
-                    <h3 class="ab-cont-grid-card-title">— Culture</h3>
-                    <div class="ab-cont-grid-card-body">
-                        <p class="ab-cont-body-r-text-par">
-                            <?= __("I appreciate companies that are <b>bold, dynamic and have strong ambitions</b>, even if they seem excessive as long as it's credible. Whether it's at the local, national or international level.") ?>
-                        </p>
-                        <p class="ab-cont-body-r-text-par">
-                            <?= __("Working in a <b>start-up environment, or for a company with a start-up mindset</b>, is something I'd appreciate, because of the possibility to have various tasks but also because of the dynamic spirit inherent to these companies.") ?>
-                        </p>
-                        <p class="ab-cont-body-r-text-par">
-                            <?= __("Finally, being a part of a company that <b>has a real social ethic is essential</b>. I am attached to efforts to fight inequality and climate change without going overboard.") ?>
-                        </p>
+                        <ul class="ab-cont-body-r-text-par">
+                            <li>- <b>Ile-De-France, France</b></li>
+                            <li>- <b>London, United Kingdom</b></li>
+                        </ul>
                     </div>
                 </section>
                 <section class="ab-cont-grid-card">
                     <h3 class="ab-cont-grid-card-title">— Remote</h3>
                     <div class="ab-cont-grid-card-body">
-                        <p class="ab-cont-body-r-text-par">
-                            <?= __("Because of the current sanitary situation, and to find the right balance between my personal and professional life, being able to <b>work remotely is a focus point when making my decision</b>.") ?>
-                        </p>
+                        <ul class="ab-cont-body-r-text-par">
+                            <li>- <b>Would be largely appreciated</b></li>
+                        </ul>
                     </div>
                 </section>
                 <section class="ab-cont-grid-card">
                     <h3 class="ab-cont-grid-card-title">— Availability</h3>
                     <div class="ab-cont-grid-card-body">
-                        <p class="ab-cont-body-r-text-par">
-                            <?= __("I can be ready to work in a brief delay, <b>within 2 to 4 weeks</b>.") ?>
-                        </p>
+                        <ul class="ab-cont-body-r-text-par">
+                            <li>>> 💎 <?= __("<b>4 weeks</b>") ?> 💎 << </li>
+                        </ul>
                     </div>
                 </section>
             </div>
