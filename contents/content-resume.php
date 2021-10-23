@@ -46,9 +46,9 @@ $experiences = get_experiences();
                     <h4 class="about-cont-achv-card-block-title">Omnicanal Marketplace Study Case</h4>
                     <h5 class="about-cont-achv-card-block-h1">— Problem</h5>
                     <p class="about-cont-achv-card-block-bdy">
-                        Between 2010 and 2019, sellers in-store traffic dropped by 60% while e-commerce turnover increased by +188%.
-                        As a result, stores are closing (+57% between 2012-2017) while real estate assets valuation is falling.
-                        COVID-19 lockdowns have just worsen the sellers fate.
+                        Between 2010-2019, sellers in-store traffic dropped by 60%, e-commerce turnover increased by +188%.
+                        As a result, stores are closing (+57% between 2012-2017), real estate assets valuation is falling.
+                        COVID-19 lock downs have worsen the sellers fate.
                     </p>
 
                     <h5 class="about-cont-achv-card-block-h1">— Solutions</h5>
