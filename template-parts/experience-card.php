@@ -8,6 +8,16 @@ $company_logo = @$exp['company']['logo'] ?: null;
 $date_start = @$exp['period']['date_start'] ?: null;
 $date_end = ($exp['period'] && !empty($exp['period']['present']) ? 'Present' : @$exp['period']['date_end']) ?: null;
 
+if ($date_start && $date_end) {
+    $new_date_start = new DateTime($date_start);
+    $new_date_end = $date_end === 'Present' ? new DateTime() : new DateTime($date_end);
+
+    $interval_year = (string) $new_date_start->diff($new_date_end)->y;
+    $interval_month = (string) $new_date_start->diff($new_date_end)->m;
+    $duration = $interval_year ? $interval_year . " yrs" : "";
+    $duration = $interval_month ? $duration . " " . $interval_month . " mos" : $duration;
+}
+
 $multi_role = !empty($exp['roles']);
 ?>
 <section class="ab-cont-xp-card">
@@ -25,7 +35,7 @@ $multi_role = !empty($exp['roles']);
                 <?= $company_name ?>
             </p>
             <p class="ab-cont-xp-card-meta">
-                <span><?= $date_start ?></span> - <span><?= $date_end ?></span>
+                <span><?= $date_start ?></span> - <span><?= $date_end ?></span> (<?= $duration ?>)
             </p>
             <p class="ab-cont-xp-card-meta">
                 <?= $exp['place'] ?>
