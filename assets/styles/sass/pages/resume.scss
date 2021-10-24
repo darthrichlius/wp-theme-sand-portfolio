@@ -201,6 +201,17 @@
 
     &-list {
       gap: calc(var(--spacing-unit) * 3);
+
+      &-toggle {
+        &--wmg {
+          margin-top: calc(var(--spacing-unit) * 3);
+        }
+
+        &-cta {
+          color: #355fc4;
+          font-size: 14px;
+        }
+      }
     }
   }
 

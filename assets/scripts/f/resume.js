@@ -1,6 +1,8 @@
 $(document).ready(function() {
     function binder() {
         $('.jss-about-cont-ss-sect-title-row, .jss-about-cont-ss-sect-title-row *').on('click', topSectionToggle);
+
+        $('.jss-ab-cont-xp-card-job-par-list-toggle-cta').on('click', experienceToggle);
     }
 
     function topSectionToggle(e) {
@@ -17,6 +19,21 @@ $(document).ready(function() {
         }
 
         $(topSection).find(".jss-about-cont-ss-sect-body").toggleClass("hidden");
+    }
+
+    function experienceToggle(e) {
+        e.stopPropagation();
+
+        var cta = $(e.target);
+        var ctaTxt = $(cta).text();
+        var ctaTxtToggle = $(cta).data("toggle");
+
+        var par = $(e.target).closest(".jss-ab-cont-xp-card-job-par-list-toggle");
+
+        $(par).siblings(".jss-ab-cont-xp-card-job-par-list").toggleClass("hidden");
+
+        $(cta).text(ctaTxtToggle);
+        $(cta).data("toggle", ctaTxt);
     }
 
     function init() {

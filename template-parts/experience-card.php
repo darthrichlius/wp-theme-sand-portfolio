@@ -33,12 +33,15 @@ $multi_role = !empty($exp['roles']);
         </div>
     </header>
     <div class="ab-cont-xp-card-bdy grid">
-        <div class="grid ab-cont-xp-card-job-par-list">
+        <div class="grid ab-cont-xp-card-job-par-list jss-ab-cont-xp-card-job-par-list hidden">
             <?php foreach ($exp['description'] as $job_d) : ?>
                 <div class="ab-cont-xp-card-job-par">
                     <?= $job_d ?>
                 </div>
             <?php endforeach; ?>
+        </div>
+        <div class="ab-cont-xp-card-job-par-list-toggle jss-ab-cont-xp-card-job-par-list-toggle">
+            <a class="grid ab-cont-xp-card-job-par-list-toggle-cta jss-ab-cont-xp-card-job-par-list-toggle-cta" data-toggle="...Show less" href=javascript:void">Learn more...</a>
         </div>
         <div class="ab-cont-xp-card-roles grid">
             <?php if ($multi_role) : ?>
@@ -52,12 +55,15 @@ $multi_role = !empty($exp['roles']);
                                 <span><?= $role['period']['date_start'] ?></span> - <span><?= $role['period']['date_end'] ?></span>
                             </p>
                         </header>
-                        <div class="grid ab-cont-xp-card-job-par-list">
+                        <div class="grid ab-cont-xp-card-job-par-list jss-ab-cont-xp-card-job-par-list hidden">
                             <?php foreach ($role['description'] as $job_d) : ?>
                                 <div class="ab-cont-xp-card-job-par">
                                     <?= $job_d ?>
                                 </div>
                             <?php endforeach; ?>
+                        </div>
+                        <div class="ab-cont-xp-card-job-par-list-toggle ab-cont-xp-card-job-par-list-toggle--wmg jss-ab-cont-xp-card-job-par-list-toggle">
+                            <a class="grid ab-cont-xp-card-job-par-list-toggle-cta  jss-ab-cont-xp-card-job-par-list-toggle-cta" data-toggle="...Show less" href=javascript:void">Learn more...</a>
                         </div>
                     </div>
                 <?php endforeach; ?>
