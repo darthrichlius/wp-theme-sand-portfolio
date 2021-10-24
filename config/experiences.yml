@@ -21,6 +21,40 @@
 #       "<u>Technologies</u>: Wordpress, PHP, Sass, MySQL / Capistrano, Gitlab, Docker, Grafana, Prometheus"
 #     ]
 #   },
+{
+    "title": "Parenting Leave",
+    "company": {
+      "name": "Home Sweet Home",
+      "logo":"/app/themes/sand-portfolio-theme/assets/media/img/baby.jpg"
+    },
+    "period": {
+      "date_start": "2020-07",
+      "present": 1,
+    },
+    "place": "Paris, France",
+    "description": [
+      "<ul style='line-height: 1.5'>
+      <li>- Working on personal projects to maintain my technical knowledge (personal website, plugins, ...)</li>
+      <li>- Keep an eye on product management with blogs, podcasts and books</li>
+      <li>- Working on product use cases (videos, ...)</li>
+      </ul>",
+      "<p>Some other <b>achievements</b>...:</p>",
+      "<ul style='line-height: 1.5'>
+      <li>- Being supportive to my wife while giving birth</li>
+      <li>- Dealing with the stress related to baby cries</li>
+      <li>- Changing my first diaper and dozens that followed</li>
+      <li>- Unclogging my son's nose while he struggles to death</li>
+      <li>- Abandon the idea of having a dry floor when giving the bath</li>
+      <li>- Reducing my sleeping time from 8 to 2 hours</li>
+      <li>- Assisting my child's first steps and stressful falls</li>
+      <li>- Spying on my son at the nursery playing with friends</li>
+      <li>- Catching up my speedy baby to get the remote controller</li>
+      <li>- Building a website with a crazy assistant on my lap</li>
+      <li>- Enjoying every wonderful moment of his life while I still can!</li>
+      </ul>",
+      
+    ]
+  },
   {
     "title": "Product Manager / Coach Agile / Senior Fullstack Developer (B2B — Web, E-Commerce, Marketplace)", 
     "type": "Permanent",
