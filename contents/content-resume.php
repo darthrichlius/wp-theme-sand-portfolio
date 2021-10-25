@@ -19,7 +19,7 @@ $experiences = get_experiences();
     <section id="summary" class="about-cont-ss-sect about-cont-ss-sect--summary">
         <h2 class="about-cont-ss-sect-title">Summary</h2>
         <div class="about-cont-ss-sect-body ab-cont-body-r-text">
-            <p><i>Hello 👋, In a hurry? The <q>summary</q> is for you!</i></p>
+            <p style="margin-top: 32px;"><i>Hello 👋, In a hurry? The <q>summary</q> is for you!</i></p>
             <p class="ab-cont-body-r-text-par">
                 <?=
                 __("My name is Richard Dieud, I'm a <b>30 yo</b> agile <b>product manager</b> and former <b>fullstack developer</b> with 9 years of experience including  <b>5 as a product manager</b>.")
@@ -82,14 +82,14 @@ $experiences = get_experiences();
         <div class="about-cont-ss-sect-body ab-cont-body-r-text">
             <h3>— What & How I Do</h3>
             <ul class="ab-cont-body-r-text-par" style="line-height: 1.8">
-                <li>- <span class="...">🤩</span> <?= __("Build solutions that make <b>users happy</b>") ?></li>
-                <li>- <span class="...">🛣</span> <?= __("Build & update the <b>roadmap</b>") ?></li>
-                <li>- <span class="...">📈</span> <?= __("Nurture <b>traffic growth</b>, <b>conversion rate</b> and <b>engagement</b>") ?></li>
-                <li>- <span class="...">🎤</span> <?= __("Define the product <b>vision</b>") ?></li>
-                <li>- <span class="...">🎯</span> <?= __("Collect & <b>prioritize</b> user problems, <b>ideate</b> solutions, define <b>goals and metrics</b> after a proper user <b>segmentation</b>") ?></li>
-                <li>- <span class="...">🤨</span> <?= __("Decrease the risk with <b>user testings</b>, <b>MVP</b>") ?></li>
-                <li>- <span class="...">🙌</span> <?= __("Write <b>specifications</b> for the tech team, a bit of <b>QA</b>") ?></li>
-                <li>- <span class="...">🔎</span> <?= __("Assess <b>results</b> and <b>iterate</b>") ?></li>
+                <li><span class="...">🤩</span> <?= __("Build solutions that make <b>users happy</b>") ?></li>
+                <li><span class="...">🛣</span> <?= __("Build & update the <b>roadmap</b>") ?></li>
+                <li><span class="...">📈</span> <?= __("Nurture <b>traffic growth</b>, <b>conversion rate</b> and <b>engagement</b>") ?></li>
+                <li><span class="...">🎤</span> <?= __("Define the product <b>vision</b>") ?></li>
+                <li><span class="...">🎯</span> <?= __("Collect & <b>prioritize</b> user problems, <b>ideate</b> solutions, define <b>goals and metrics</b> after a proper user <b>segmentation</b>") ?></li>
+                <li><span class="...">🤨</span> <?= __("Decrease the risk with <b>user testings</b>, <b>MVP</b>") ?></li>
+                <li><span class="...">🙌</span> <?= __("Write <b>specifications</b> for the tech team, a bit of <b>QA</b>") ?></li>
+                <li><span class="...">🔎</span> <?= __("Assess <b>results</b> and <b>iterate</b>") ?></li>
             </ul>
             <p style="display: none">[CTA:CHECK MY USES CASES]</p>
         </div>
@@ -111,6 +111,8 @@ $experiences = get_experiences();
                 <li><?= __("Leadership") ?></li>
                 <li>▪</li>
                 <li><?= __("Saying No") ?></li>
+                <li>▪</li>
+                <li><?= __("Persuasive") ?></li>
                 <li>▪</li>
                 <li><?= __("Agility") ?></li>
                 <li>▪</li>
