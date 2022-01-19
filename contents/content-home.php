@@ -1,17 +1,17 @@
 <div class="page-main">
     <div class="home-dev-hero app-col-start-3">
         <h1>
-            <span class="home-dev-hero-type hidden-mobile">Blogger &</span>
+            <span class="home-dev-hero-type hidden-mobile">Technical Digital Expert &</span>
             <span class="home-dev-hero-name">Richard Dieud</span>
             <br />
             <strong class="home-dev-hero-title">Product <br />Manager</strong>
         </h1>
     </div>
     <div class="home-dev-agile-specs app-col-start-8">
-        <h3 class="home-dev-agile-specs-pri">Range of expertise</h3>
-        <h4 class="home-dev-agile-specs-sec">Web, E-Commerce</h4>
-        <h4 class="home-dev-agile-specs-sec">Scrum, Kanban, <strong>Agile Coach</strong></h4>
-        <h4 class="home-dev-agile-specs-sec">Product, Digital Marketing Blogger</h4>
+        <h3 class="home-dev-agile-specs-pri"></h3>
+        <h4 class="home-dev-agile-specs-sec"><strong>Seniority</strong>: 8 years, 5 as PM</h4>
+        <h4 class="home-dev-agile-specs-sec"><strong>Strengths</strong>: GTD, Dual Skills, Ownership</h4>
+        <h4 class="home-dev-agile-specs-sec"><strong>XP in</strong>: Web, E-Commerce, SaaS, Agile</h4>
     </div>
     <div class="home-dev-stack-unv app-col-start-5">
         <div class="home-dev-stack-unv-kuiper-wrap">

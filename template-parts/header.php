@@ -44,10 +44,10 @@
             ) ?>
             <footer>
                 <div class="blade-l-bottom-socnet sm-mode">
-                    <a href="https://linkedin.com">
+                    <a href="https://linkedin.com/in/iamloucarther">
                         <span class="iconify" data-icon="akar-icons:linkedin-fill" data-inline="false"></span>
                     </a>
-                    <a href="https://twitter.com">
+                    <a href="https://twitter.com/rdieud">
                         <span class="iconify" data-icon="akar-icons:twitter-fill" data-inline="false"></span>
                     </a>
                 </div>

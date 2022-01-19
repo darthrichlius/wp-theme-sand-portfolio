@@ -235,7 +235,7 @@
       border-radius: 12px;
       width: 4px;
       height: calc(100% - 24px);
-      background-color: #e5e5e5;
+      background-color: var(--color-grey-background);
     }
 
     & header {
@@ -253,7 +253,7 @@
         border-radius: 50%;
         width: 8px;
         height: 8px;
-        background-color: #e5e5e5;
+        background-color: var(--color-grey-background);
       }
     }
   }

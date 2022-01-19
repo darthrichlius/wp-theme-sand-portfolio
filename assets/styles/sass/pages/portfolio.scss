@@ -20,7 +20,7 @@
   flex-direction: column;
   gap: calc(var(--spacing-unit) * 2);
 
-  /* border-left: 6px solid #e5e5e5;
+  /* border-left: 6px solid var(--color-grey-background);
   padding-left: calc(var(--spacing-unit) * 2); */
 
   @include land-md-upper {

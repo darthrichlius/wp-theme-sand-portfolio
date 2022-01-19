@@ -70,11 +70,15 @@ $kuiper-width-lg: 294px;
   }
 
   @include md-upper {
-    font-size: 92px;
+    font-size: 75px;
 
     & br {
       display: none;
     }
+  }
+
+  @include lg-upper {
+    font-size: 92px;
   }
 }
 
@@ -246,6 +250,7 @@ $kuiper-width-lg: 294px;
 }
 
 .home-dev-agile-specs-pri {
+  border-top: 5px solid var(--color-grey-background);
   margin-bottom: calc(var(--spacing-unit) * 2);
   font-family: var(--font-family-sans-serif-main);
   font-size: 24px;
