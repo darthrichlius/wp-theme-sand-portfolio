@@ -22,7 +22,7 @@
 #     ]
 #   },
 {
-    "title": "Parenting Leave / Training & Personal Projects",
+    "title": "Parenting Leave / Product Training & Personal Projects",
     "company": {
       "name": "Home Sweet Home",
       "logo":"/app/themes/sand-portfolio-theme/assets/media/img/baby.jpg"
@@ -33,26 +33,30 @@
     },
     "place": "Paris, France",
     "description": [
-      "<ul style='line-height: 1.5'>
-      <li>- Working on personal projects to maintain my technical knowledge (personal website, plugins, ...)</li>
-      <li>- Keep an eye on product management with blogs, podcasts and books</li>
-      <li>- Working on product use cases (videos, ...)</li>
+      "Following the high business uncertainty conjecture related to COVID-19 and the birth of my first child, I decided to take a paternity leave to fully focus on my duty as a father. 
+      Now that my baby is grown and more independent, I am fully focused on bouncing back into the professional world as soon as possible.",
+      "During that period, <strong>I worked to keep my skills at the best level while gaining new skills</strong>, working on personal projects and taking courses I always wanted to take. Below is a list of work I did during that time:",
+      "<ul style='line-height: 1.8'>
+      <li>- Keep up to date with the product management news via blogs, podcasts and books</li>
+      <li>- Working on product use cases (<a style=\"color: #355fc4\" href=\"/use-cases\">Check some of my work</a>)</li>
+      <li>- Taking courses and training (User Interviews, Social Media Marketing, Figma, Adobe Suite, ...)</li>
+      <li>- Assessing product and marketing tools (Amplitude, Airtable, Miro, ...)</li>
+      <li>- Maintain & Improve technical skills though personal projects (Docker, React, Wordpress, ...)</li>
       </ul>",
-      "<p>Some other <b>achievements</b>...:</p>",
-      "<ul style='line-height: 1.5'>
-      <li>- Being supportive to my wife while giving birth</li>
-      <li>- Dealing with the stress related to baby cries</li>
-      <li>- Changing my first diaper and dozens that followed</li>
-      <li>- Unclogging my son's nose while he struggles to death</li>
-      <li>- Abandon the idea of having a dry floor when giving the bath</li>
-      <li>- Reducing my sleeping time from 8 to 2 hours</li>
-      <li>- Assisting my child's first steps and stressful falls</li>
-      <li>- Spying on my son at the nursery playing with friends</li>
-      <li>- Catching up my speedy baby to get the remote controller</li>
-      <li>- Building a website with a crazy assistant on my lap</li>
-      <li>- Enjoying every wonderful moment of his life while I still can!</li>
-      </ul>",
-      
+#      "<p>Some other <b>achievements</b>...:</p>",
+#      "<ul style='line-height: 1.5'>
+#      <li>- Being supportive to my wife while giving birth</li>
+#      <li>- Dealing with the stress related to baby cries</li>
+#      <li>- Changing my first diaper and dozens that followed</li>
+#      <li>- Unclogging my son's nose while he struggles to death</li>
+#      <li>- Abandon the idea of having a dry floor when giving the bath</li>
+#      <li>- Reducing my sleeping time from 8 to 2 hours</li>
+#      <li>- Assisting my child's first steps and stressful falls</li>
+#      <li>- Spying on my son at the nursery playing with friends</li>
+#      <li>- Catching up my speedy baby to get the remote controller</li>
+#      <li>- Building a website with a crazy assistant on my lap</li>
+#      <li>- Enjoying every wonderful moment of his life while I still can!</li>
+#      </ul>", 
     ]
   },
   {
