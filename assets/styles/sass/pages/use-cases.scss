@@ -1,0 +1,120 @@
+@import "../base";
+
+.usc-cont-usc-card {
+  @include md-upper {
+    border-left: 5px solid black;
+  }
+
+  max-width: 900px;
+  padding-left: calc(var(--spacing-unit) * 3);
+}
+
+.usc-cont-usc-card {
+  &-hdr {
+    grid-template-columns: calc(var(--spacing-unit) * 7) auto;
+    gap: calc(var(--spacing-unit) * 3);
+
+    line-height: 1.6;
+
+    &-l {
+    }
+
+    &-r {
+    }
+
+    &-metas {
+      justify-content: space-between;
+      gap: calc(var(--spacing-unit) * 3);
+
+      margin-top: calc(var(--spacing-unit) / 2);
+    }
+
+    &-meta {
+      font-size: 11px;
+      color: grey;
+    }
+  }
+
+  &-title {
+    font-family: var(--font-family-sans-serif-main);
+    font-weight: 600;
+    font-size: 24px;
+  }
+  &-cmpy {
+    &-logo {
+      display: inline-block;
+      width: 70px;
+    }
+  }
+
+  &-body {
+    gap: calc(var(--spacing-unit) * 2);
+    margin-top: calc(var(--spacing-unit) * 3);
+
+    &-desc {
+      &-par {
+        & p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &-ftr {
+    margin-top: calc(var(--spacing-unit) * 3);
+
+    &-file-card {
+      &-cta {
+        border-bottom: 2px solid transparent;
+        padding-bottom: calc(var(--spacing-unit) / 2);
+        font-size: 16px;
+        font-weight: 700;
+        outline: 0 !important;
+        line-height: 1;
+
+        &-wpr {
+          align-items: center;
+          gap: calc(var(--spacing-unit) * 1);
+        }
+
+        &:hover {
+          border-color: black;
+        }
+      }
+
+      &-hdr {
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        // background-color: var(--color-grey-background);
+        overflow: hidden;
+
+        &-fname {
+          padding: calc(var(--spacing-unit) * 2);
+
+          &-name p {
+            font-size: 14px;
+          }
+
+          &-wning {
+            margin-top: calc(var(--spacing-unit) * 1);
+            font-size: 10px;
+            font-weight: 600;
+          }
+        }
+
+        &-flogo {
+          padding: calc(var(--spacing-unit) * 2);
+        }
+      }
+
+      &-ftr {
+        gap: calc(var(--spacing-unit) * 3);
+        margin-top: calc(var(--spacing-unit) * 2);
+      }
+    }
+
+    &-iframe-card {
+      margin-top: calc(var(--spacing-unit) * 5);
+    }
+  }
+}

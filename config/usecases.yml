@@ -1,0 +1,30 @@
+[
+{
+    "title": "Market opportunity assessment strategy",
+    "company": {
+      "name": "",
+      "logo":""
+    },
+    "date": "2021",
+    "market": {
+      "size": "",
+      "industry": "Electronic Signature",
+      "geography": "France",
+    },
+    "description": [
+      "<p style='line-height: 1.5'>
+        This case is related to the work I did for a French electronic signature provider as part of a take-home assessment for a Product Manager application. 
+        It gives you the opportunity to independently check how I work and how I structure my thoughts. 
+        A more complete version exists with the result of the market research and some assets (Persona, Customer Journey, Roadmap, ...).
+      </p>",
+      "<p style='line-height: 1.5'>
+        However this case was bonded to a limited time constraint, so it reflects the amount of work I take to deliver following that duration.
+Finally, I'd have preferred to use JIRA for the backlog but that would have resulted to make this document less sharable.
+      </p>",
+    ],
+    "file": {
+      "name": "Electronic Signature - Market Opportunity.pdf",
+      "uri": "/app/themes/sand-portfolio-theme/assets/files/docs/NotDocuSign - Take Home PM Assignment - Richard Dieud.pdf"
+    }
+  },
+]

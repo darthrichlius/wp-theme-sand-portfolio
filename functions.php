@@ -15,6 +15,7 @@ define('RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY', 'rd_wpthm_sandp');
 define('RD_THEME_SAND_PORTFOLIO_CONFIG_DIR',  RD_THEME_SAND_PORTFOLIO_ROOTDIR . '/config');
 
 define('RD_THEME_SAND_PORTFOLIO_PAGE_RESUME',  'resume');
+define('RD_THEME_SAND_PORTFOLIO_PAGE_USECASES',  'use-cases');
 define('RD_THEME_SAND_PORTFOLIO_PAGE_SERVICES',  'services');
 define('RD_THEME_SAND_PORTFOLIO_PAGE_PORTFOLIO',  'portfolio');
 define('RD_THEME_SAND_PORTFOLIO_PAGE_CONTACT',  'contact');
@@ -50,6 +51,7 @@ function theme_register_assets()
         wp_enqueue_style('rd-sand-portfolio-styles-model', get_template_directory_uri() . '/assets/styles/css/models/model_wc.css', [], wp_get_theme()->get('Version'));
 
         $page_slug = get_post()->post_name;
+
         switch ($page_slug) {
             case RD_THEME_SAND_PORTFOLIO_PAGE_PORTFOLIO:
                 wp_enqueue_style("rd-sand-portfolio-styles-page-$page_slug", get_template_directory_uri() . "/assets/styles/css/pages/$page_slug.css", [], wp_get_theme()->get('Version'));
@@ -58,6 +60,7 @@ function theme_register_assets()
                 wp_enqueue_script("business-rdieud-com-scripts-page-$page_slug", get_template_directory_uri() . "/assets/scripts/f/$page_slug.js", [], wp_get_theme()->get('Version'), true);
                 break;
             case RD_THEME_SAND_PORTFOLIO_PAGE_RESUME:
+            case RD_THEME_SAND_PORTFOLIO_PAGE_USECASES:
                 wp_enqueue_style("rd-sand-portfolio-styles-page-$page_slug", get_template_directory_uri() . "/assets/styles/css/pages/$page_slug.css", [], wp_get_theme()->get('Version'));
 
                 wp_enqueue_script("business-rdieud-com-scripts-page-$page_slug", get_template_directory_uri() . "/assets/scripts/f/$page_slug.js", [], wp_get_theme()->get('Version'), true);
@@ -76,6 +79,7 @@ function init_config()
 
     $configFile = RD_THEME_SAND_PORTFOLIO_CONFIG_DIR . '/config.json';
     $expeirenceFile = RD_THEME_SAND_PORTFOLIO_CONFIG_DIR . "/experiences.yml";
+    $useCaseFile = RD_THEME_SAND_PORTFOLIO_CONFIG_DIR . "/usecases.yml";
     $dataLangsFile = RD_THEME_SAND_PORTFOLIO_CONFIG_DIR . "/data-langs/$lang_code.json";
 
     $config = new stdClass();
@@ -92,11 +96,17 @@ function init_config()
         $experiences = Yaml::parse(file_get_contents($expeirenceFile));
     }
 
+    $usecases = new stdClass();
+    if (file_exists($useCaseFile)) {
+        $usecases = Yaml::parse(file_get_contents($useCaseFile));
+    }
+
 
     $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY] = (object) [
         "config" => $config,
         "data_langs" => $dataLangs,
-        "experiences" => $experiences
+        "experiences" => $experiences,
+        "usecases" => $usecases
     ];
 }
 
@@ -113,6 +123,11 @@ function get_data_langs()
 function get_experiences()
 {
     return $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY]->experiences;
+}
+
+function get_usecases()
+{
+    return $GLOBALS[RD_THEME_SAND_PORTFOLIO_GLOBAL_KEY]->usecases;
 }
 
 function get_state()
