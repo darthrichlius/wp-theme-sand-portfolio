@@ -24,9 +24,9 @@
                     <div class="home-dev-stack-unv-luna home-dev-stack-unv-luna--4"></div>
 
                     <span class="home-dev-stack-unv-planet home-dev-stack-unv-planet--1">Marketing</span>
-                    <span class="home-dev-stack-unv-planet home-dev-stack-unv-planet--2">Web</span>
+                    <span class="home-dev-stack-unv-planet home-dev-stack-unv-planet--2">UI/UX</span>
                     <span class="home-dev-stack-unv-planet home-dev-stack-unv-planet--3">Tech</span>
-                    <span class="home-dev-stack-unv-planet home-dev-stack-unv-planet--4">UI/UX</span>
+                    <span class="home-dev-stack-unv-planet home-dev-stack-unv-planet--4">Product</span>
 
                     <div class="home-dev-stack-unv-sun"></div>
                 </div>
