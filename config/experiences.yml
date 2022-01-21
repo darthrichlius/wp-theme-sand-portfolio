@@ -86,17 +86,17 @@
         "description": [
           "As time went by, we realized that, given the structural difficulties the team was facing, it was becoming urgent to set up a more efficient work system. It is in this context that I took on the role of Product Manager and Agile Coach to take control of the project management, better coordinate its development, set up an agile structure and finally, help the team increase its skills in agile & scrum.",
           "<ul style='line-height: 1.5'>
-          <li>- Promote agile principles to all stakeholders<li>
+          <li>- Promote <strong>agile principles</strong> to all stakeholders<li>
           <li>- Hold agile training sessions<li>
           <li>- Lead design thinking workshops<li>
-          <li>- Conduct Market research<li>
+          <li>- Conduct <strong>Market research</strong><li>
           <li>- Validate product design mockups and wireframes<li>
-          <li>- Write user stories<li>
-          <li>- Set up the roadmap<li>
-          <li>- Facilitate agile ceremonies (Sprint planning, DSM, sprint review, retrospective)<li>
-          <li>- Set up & pririotize the backlog<li>
+          <li>- Write <strong>user stories</strong><li>
+          <li>- Set up the <strong>roadmap</strong><li>
+          <li>- Facilitate <strong>agile ceremonies</strong> (Sprint planning, DSM, sprint review, retrospective)<li>
+          <li>- Set up & pririotize the <strong>backlog</strong><li>
           <li>- Report progress & issues to the executives and get feedback over how to solve them asap</li>
-          <li>- Monitor the team's velocity with a burndown and raise warnings</li>
+          <li>- Monitor the team's velocity with a <strong>burndown</strong> and raise warnings</li>
           </ul>",
           "<u>Technologies</u>: JIRA, Trello, Slack, Google WorkPlace"
         ]
